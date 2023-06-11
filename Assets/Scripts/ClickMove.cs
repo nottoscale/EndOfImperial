@@ -26,7 +26,7 @@ public class ClickMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
             // Get the mouse position on the screen
             Vector3 mousePosition = Input.mousePosition;
