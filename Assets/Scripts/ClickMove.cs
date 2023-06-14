@@ -11,9 +11,11 @@ public class ClickMove : MonoBehaviour
     private Transform playerModel;
     [SerializeField]
     private Animator anim;
+    [SerializeField]
+    private bool _canMove = true;
+    public bool canMove { get => _canMove; }
 
     private Transform thisTrans;
-
     private Vector3 rightRotation = new Vector3(90, 0, 0);
     private Vector3 leftRotation = new Vector3(270, 0, 180);
 
@@ -26,7 +28,7 @@ public class ClickMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (canMove && Input.GetButtonDown("Fire1"))
         {
             // Get the mouse position on the screen
             Vector3 mousePosition = Input.mousePosition;
@@ -70,5 +72,10 @@ public class ClickMove : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void BTN_ToggleCanMove(bool status)
+    {
+        _canMove = status;
     }
 }
