@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -16,6 +14,8 @@ public class ClickMove : MonoBehaviour
     public bool canMove { get => _canMove; }
 
     private Transform thisTrans;
+    // make sure the animation is facing left or right based on
+    // which direction the player is going
     private Vector3 rightRotation = new Vector3(90, 0, 0);
     private Vector3 leftRotation = new Vector3(270, 0, 180);
 
@@ -28,36 +28,49 @@ public class ClickMove : MonoBehaviour
 
     void Update()
     {
+        // move via mouse click
         if (canMove && Input.GetButtonDown("Fire1"))
         {
-            // Get the mouse position on the screen
-            Vector3 mousePosition = Input.mousePosition;
-
-            // Convert that position to a position in the world
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-            navMeshAgent.destination = targetPosition;
-
-            if (thisTrans.position.x < targetPosition.x)
-            {
-                playerModel.localEulerAngles = rightRotation;
-            }
-            else if (thisTrans.position.x > targetPosition.x)
-            {
-                playerModel.localEulerAngles = leftRotation;
-
-            }
-
+            MoveToMousePosition();
             anim.SetBool("isMoving", true);
         }
 
-        if (anim.GetBool("isMoving"))
+        // check if we stopped moving and should go to idle
+        if (anim.GetBool("isMoving") && HasReachedDestination())
         {
-            CheckReached();
+            anim.SetBool("isMoving", false);
         }
     }
 
-    private void CheckReached()
+    private void MoveToMousePosition()
+    {
+        // Get the mouse position on the screen
+        Vector3 mousePosition = Input.mousePosition;
+
+        // Convert that position to a position in the world
+        Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        navMeshAgent.destination = targetPosition;
+
+        UpdatePlayerModelDirection(targetPosition);
+    }
+
+    // updates direction player model is facing based on whether
+    // player is going left or right
+    private void UpdatePlayerModelDirection(Vector3 targetPosition)
+    {
+        if (thisTrans.position.x < targetPosition.x)
+        {
+            playerModel.localEulerAngles = rightRotation;
+        }
+        else if (thisTrans.position.x > targetPosition.x)
+        {
+            playerModel.localEulerAngles = leftRotation;
+
+        }
+    }
+
+    private bool HasReachedDestination()
     {
         // Check if we've reached the destination
         if (!navMeshAgent.pathPending)
@@ -67,11 +80,12 @@ public class ClickMove : MonoBehaviour
                 if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
                 {
                     // Done
-                    anim.SetBool("isMoving", false);
-
+                    return true;
                 }
             }
         }
+
+        return false;
     }
 
     public void BTN_ToggleCanMove(bool status)
