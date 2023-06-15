@@ -70,22 +70,12 @@ public class ClickMove : MonoBehaviour
         }
     }
 
+    // check if we have reached our target destination on the navmesh
     private bool HasReachedDestination()
     {
-        // Check if we've reached the destination
-        if (!navMeshAgent.pathPending)
-        {
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
-                {
-                    // Done
-                    return true;
-                }
-            }
-        }
-
-        return false;
+        return !navMeshAgent.pathPending
+            && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance
+            && (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f);
     }
 
     public void BTN_ToggleCanMove(bool status)
