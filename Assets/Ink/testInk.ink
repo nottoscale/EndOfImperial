@@ -1,11 +1,13 @@
 EXTERNAL debug(message)
+EXTERNAL changeScene(message)
 ~ debug("This is a tested")
 
 
 Once upon a time... 
  
- * There were two choices. 
- * There were four lines of content.
+ * Continue this Scene
+ * Change scenes
+   ~changeScene("test")
 
 - They lived happily ever after.
 ~ debug("This is another")

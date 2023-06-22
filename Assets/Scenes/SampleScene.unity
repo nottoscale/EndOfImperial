@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkJSONAsset: {fileID: 4900000, guid: 901a02e98ec656d47a9df5dd1db34120, type: 3}
-  usableExternalActions: 00000000
+  usableExternalActions: 0000000001000000
 --- !u!1 &1497606768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1827,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597651154, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 8131615772222539117, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_NavMeshData
       value: 

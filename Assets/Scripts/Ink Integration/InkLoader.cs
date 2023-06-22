@@ -26,7 +26,7 @@ public abstract class InkLoader : MonoBehaviour
         InkExternalActionType[] uniqueExternalActions = usableExternalActions.Distinct().ToArray();
         foreach (InkExternalActionType externalAction in uniqueExternalActions)
         {
-            InkExternalActionManager.BindActionToStory(ref story, externalAction);
+            InkExternalActionManager.BindActionsToStory(ref story, externalAction);
         }
     }
 }

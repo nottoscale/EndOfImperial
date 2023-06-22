@@ -34,7 +34,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     public void ShowStory(Story story)
     {
         this.story = story;
-        SceneManager.Instance.TogglePlayerCanMove(false);
+        GameManager.Instance.TogglePlayerCanMove(false);
         StepThroughStory();
     }
 
@@ -67,7 +67,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         {
             // If we've read all the content and there's no choices, the story is finished!
             HideText();
-            SceneManager.Instance.TogglePlayerCanMove(true);
+            GameManager.Instance.TogglePlayerCanMove(true);
         }
     }
 
