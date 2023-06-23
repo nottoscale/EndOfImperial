@@ -6,6 +6,6 @@ public class InkDialogue : InkLoader
 {
     public void ShowDialogue()
     {
-        DialogueSystem.Instance.ShowStory(story);
+        DialogueSystem.Instance.ShowStory(story, knotName);
     }
 }

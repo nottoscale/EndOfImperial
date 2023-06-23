@@ -1,15 +1,25 @@
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
-~ debug("This is a tested")
 
 
-Once upon a time... 
+Make your choices... 
  
- * Continue this Scene
+ * [Test Option] it works
  * Change scenes
-   ~changeScene("test")
+ #  ~ changeScene("test")
 
-- They lived happily ever after.
-~ debug("This is another")
+- Stuff down here
  * Continue
     -> END
+
+
+=== TestKnot ===
+THIS IS A SEPARATE KNOT
+ * Continue
+ -> END
+ 
+ 
+=== TestKnot2 ===
+THIS IS YET ANOTHER KNOT
+ * Continue
+ -> END

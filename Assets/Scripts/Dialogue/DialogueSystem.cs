@@ -31,9 +31,13 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         dialogueText.text = "";
     }
 
-    public void ShowStory(Story story)
+    public void ShowStory(Story story, string knotName)
     {
         this.story = story;
+        if (!string.IsNullOrEmpty(knotName))
+        {
+            story.ChoosePathString(knotName);
+        }
         GameManager.Instance.TogglePlayerCanMove(false);
         StepThroughStory();
     }
@@ -47,6 +51,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
             // This removes any white space from the text.
             string text = story.Continue();
             text = text.Trim();
+            //Debug.Log($"--{text}");
 
             ShowText(text);
         }

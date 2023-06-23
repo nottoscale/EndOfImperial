@@ -11,6 +11,8 @@ public abstract class InkLoader : MonoBehaviour
     [SerializeField]
     private TextAsset inkJSONAsset = null;
     [SerializeField]
+    protected string knotName = null;
+    [SerializeField]
     private InkExternalActionType[] usableExternalActions;
 
 
