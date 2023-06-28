@@ -2,6 +2,7 @@ INCLUDE testLoop.ink
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
 VAR test2 = 6
+VAR boolTest = false
 
 Make your choices... 
  
@@ -23,6 +24,7 @@ I'm sorry your princess is in another castle.
  
  
 === TestKnot2 ===
-THIS IS YET ANOTHER KNOT
+THIS IS YET ANOTHER KNOT {boolTest}
+~ boolTest = !boolTest
  + Continue
  -> DONE
