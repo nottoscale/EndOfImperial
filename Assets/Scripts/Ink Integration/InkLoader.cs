@@ -2,16 +2,12 @@ using UnityEngine;
 using Ink.Runtime;
 using System.Linq;
 
-public abstract class InkLoader : MonoBehaviour
+public class InkLoader : MonoBehaviour
 {
-    // needs to be public so that InkExeternalActionManager can handle the bindings.
-    // you could use "Factory" pattern to make this safer probably
     public Story story;
    
     [SerializeField]
     private TextAsset inkJSONAsset = null;
-    [SerializeField]
-    protected string knotName = null;
     [SerializeField]
     private InkExternalActionType[] usableExternalActions;
 
@@ -23,12 +19,24 @@ public abstract class InkLoader : MonoBehaviour
 
     protected void LoadInk()
     {
-        story = new Story(inkJSONAsset.text);
+        story = InitStory();
 
         InkExternalActionType[] uniqueExternalActions = usableExternalActions.Distinct().ToArray();
         foreach (InkExternalActionType externalAction in uniqueExternalActions)
         {
             InkExternalActionManager.BindActionsToStory(ref story, externalAction);
         }
+    }
+
+    private void OnStoryError(string message, Ink.ErrorType type)
+    {
+        Debug.LogError($"Ink Error ({type}): {message}");
+    }
+
+    public Story InitStory()
+    {
+        Story newStory = new Story(inkJSONAsset.text);
+        newStory.onError += OnStoryError;
+        return newStory;
     }
 }

@@ -48,7 +48,6 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         choicesPanel.DestroyAllChildren();
         while (story.canContinue)
         {
-            // This removes any white space from the text.
             string text = story.Continue();
             text = text.Trim();
             //Debug.Log($"--{text}");
