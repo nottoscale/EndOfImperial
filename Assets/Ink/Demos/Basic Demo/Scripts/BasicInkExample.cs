@@ -6,8 +6,21 @@ using Ink.Runtime;
 // This is a super bare bones example of how to play and display a ink story in Unity.
 public class BasicInkExample : MonoBehaviour {
     public static event Action<Story> OnCreateStory;
-	
-    void Awake () {
+
+	[SerializeField]
+	private TextAsset inkJSONAsset = null;
+	public Story story;
+
+	[SerializeField]
+	private Canvas canvas = null;
+
+	// UI Prefabs
+	[SerializeField]
+	private Text textPrefab = null;
+	[SerializeField]
+	private Button buttonPrefab = null;
+
+	void Awake () {
 		// Remove the default message
 		RemoveChildren();
 		StartStory();
@@ -94,17 +107,4 @@ public class BasicInkExample : MonoBehaviour {
 			GameObject.Destroy (canvas.transform.GetChild (i).gameObject);
 		}
 	}
-
-	[SerializeField]
-	private TextAsset inkJSONAsset = null;
-	public Story story;
-
-	[SerializeField]
-	private Canvas canvas = null;
-
-	// UI Prefabs
-	[SerializeField]
-	private Text textPrefab = null;
-	[SerializeField]
-	private Button buttonPrefab = null;
 }
