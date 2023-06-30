@@ -36,3 +36,9 @@ List Knot {currentColor}
 ~ currentColor++
  + Continue
  -> DONE
+ 
+=== TestKnot4 ===
+THIS IS TEST 4 KNOT{boolTest}
+~ boolTest = !boolTest
+ + Continue
+ -> DONE
