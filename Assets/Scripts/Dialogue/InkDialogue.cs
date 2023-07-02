@@ -10,6 +10,6 @@ public class InkDialogue : MonoBehaviour
 
     public void ShowDialogue()
     {
-        DialogueSystem.Instance.ShowStory(StoryManager.Instance.GetStory(), knotName);
+        DialogueSystem.Instance.ShowStory(knotName);
     }
 }

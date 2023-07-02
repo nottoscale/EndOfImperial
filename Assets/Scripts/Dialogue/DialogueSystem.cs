@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
-using System;
 using UnityEngine.UI;
 
 public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
@@ -31,9 +28,9 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         dialogueText.text = "";
     }
 
-    public void ShowStory(Story story, string knotName)
+    public void ShowStory(string knotName)
     {
-        this.story = story;
+        story = StoryManager.Instance.GetStory();
         if (!string.IsNullOrEmpty(knotName))
         {
             story.ChoosePathString(knotName);
@@ -64,6 +61,10 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
                 // Tell the button what to do when we press it
                 button.onClick.AddListener(delegate {
                     OnClickChoiceButton(choice);
+                    if (StoryManager.Instance.shouldSave)
+                    {
+                        StoryManager.Instance.SaveStory();
+                    }
                 });
             }
         }

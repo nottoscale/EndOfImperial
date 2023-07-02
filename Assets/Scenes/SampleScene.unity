@@ -2658,6 +2658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Common Elements
       objectReference: {fileID: 0}
+    - target: {fileID: 8205758954624347384, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _saveStory
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
 --- !u!114 &8131615771616732163

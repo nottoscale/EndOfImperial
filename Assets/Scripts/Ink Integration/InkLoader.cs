@@ -20,6 +20,10 @@ public class InkLoader : MonoBehaviour
     protected void LoadInk()
     {
         story = InitStory();
+        if (StoryManager.Instance.shouldSave)
+        {
+            LoadSaveFile();
+        }
 
         InkExternalActionType[] uniqueExternalActions = usableExternalActions.Distinct().ToArray();
         foreach (InkExternalActionType externalAction in uniqueExternalActions)
@@ -38,5 +42,29 @@ public class InkLoader : MonoBehaviour
         Story newStory = new Story(inkJSONAsset.text);
         newStory.onError += OnStoryError;
         return newStory;
+    }
+
+    public void LoadSaveFile()
+    {
+        if (PlayerPrefs.HasKey(Constants.SAVE_STATE_KEY))
+        {
+            var savedState = PlayerPrefs.GetString(Constants.SAVE_STATE_KEY);
+            story.state.LoadJson(savedState);
+        }
+    }
+
+    public void SaveStory()
+    {
+        string savedState = story.state.ToJson();
+        PlayerPrefs.SetString(Constants.SAVE_STATE_KEY, savedState);
+    }
+
+    public void BTN_ResetStorySave()
+    {
+        PlayerPrefs.DeleteKey(Constants.SAVE_STATE_KEY);
+        if (story)
+        {
+            story.ResetState();
+        }
     }
 }

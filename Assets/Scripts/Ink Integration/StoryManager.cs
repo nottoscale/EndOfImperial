@@ -7,15 +7,22 @@ public class StoryManager : SingletonMonoBehaviour<StoryManager>
 {
     [SerializeField]
     private InkLoader inkLoader;
+    [SerializeField]
+    private bool _saveStory = false;
+    public bool shouldSave { get => _saveStory; }
 
     public Story GetStory()
     {
         return inkLoader.story;
     }
 
-    // get a newly created story (basically resets to beginning)
-    public Story GetStoryFromStart()
+    public void SaveStory()
     {
-        return inkLoader.InitStory();
+        inkLoader.SaveStory();
+    }
+
+    public void BTN_ResetStorySave()
+    {
+        inkLoader.BTN_ResetStorySave();
     }
 }
