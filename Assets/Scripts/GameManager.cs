@@ -14,6 +14,17 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         player.GetComponent<ClickMove>().BTN_ToggleCanMove(status);
     }
 
+    public void TogglePlayerCanInteract(bool status)
+    {
+        player.GetComponent<Interact>().ToggleCanInteract(status);
+    }
+
+    public void TogglePlayerLocked(bool status)
+    {
+        TogglePlayerCanMove(!status);
+        TogglePlayerCanInteract(!status);
+    }
+
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

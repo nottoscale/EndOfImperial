@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class ClickMove : MonoBehaviour
 {
@@ -44,6 +45,12 @@ public class ClickMove : MonoBehaviour
 
     private void MoveToMousePosition()
     {
+        // If the pointer is over a UI element, don't move the player
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         // Get the mouse position on the screen
         Vector3 mousePosition = Input.mousePosition;
 
