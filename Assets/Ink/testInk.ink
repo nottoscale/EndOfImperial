@@ -8,13 +8,13 @@ VAR currentColor = red
 
 Make your choices... 
  
- * [Test Option] it works
- * Change scenes -> TestKnot
+ + [Test Option] it works
+ + Change scenes -> TestKnot
  #  ~ changeScene("test")
 
 - Stuff down here {test2}
  ~ test2++
- * Continue {test2}
+ + Continue {test2}
     -> END
 
 
@@ -42,3 +42,15 @@ THIS IS TEST 4 KNOT{boolTest}
 ~ boolTest = !boolTest
  + Continue
  -> DONE
+ 
+ === TestKnot5 ===
+Make your choices... 
+ 
+ + [Test Option] it works
+ + Change scenes -> TestKnot
+ #  ~ changeScene("test")
+
+- Stuff down here {test2}
+ ~ test2++
+ + Continue {test2}
+    -> END
