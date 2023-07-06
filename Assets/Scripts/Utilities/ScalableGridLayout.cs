@@ -11,6 +11,7 @@ public class ScalableGridLayout : GridLayoutGroup
     {
         base.Start();
         lastScreenSize = new Vector2(Screen.width, Screen.height);
+        UpdateCellSizes();
     }
 
     void Update()
