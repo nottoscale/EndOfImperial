@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.0000014
       objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567168, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: orthographic size
+      value: 4.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8131615772296360980, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.24
@@ -245,6 +249,10 @@ PrefabInstance:
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.0000014305115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454253, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 4.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
