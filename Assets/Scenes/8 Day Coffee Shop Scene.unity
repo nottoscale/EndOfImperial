@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567168, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8131615772684823324, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_RootOrder
       value: 0
