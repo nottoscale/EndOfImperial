@@ -46,9 +46,9 @@ public class InkLoader : MonoBehaviour
 
     public void LoadSaveFile()
     {
-        if (PlayerPrefs.HasKey(Constants.SAVE_STATE_KEY))
+        if (PlayerPrefs.HasKey(ConfigConstants.SAVE_STATE_KEY))
         {
-            var savedState = PlayerPrefs.GetString(Constants.SAVE_STATE_KEY);
+            var savedState = PlayerPrefs.GetString(ConfigConstants.SAVE_STATE_KEY);
             story.state.LoadJson(savedState);
         }
     }
@@ -56,12 +56,12 @@ public class InkLoader : MonoBehaviour
     public void SaveStory()
     {
         string savedState = story.state.ToJson();
-        PlayerPrefs.SetString(Constants.SAVE_STATE_KEY, savedState);
+        PlayerPrefs.SetString(ConfigConstants.SAVE_STATE_KEY, savedState);
     }
 
     public void BTN_ResetStorySave()
     {
-        PlayerPrefs.DeleteKey(Constants.SAVE_STATE_KEY);
+        PlayerPrefs.DeleteKey(ConfigConstants.SAVE_STATE_KEY);
         if (story)
         {
             story.ResetState();

@@ -2,6 +2,8 @@
 INCLUDE 1_CoffeeShopNight.ink
 
 // Variables
+VAR SPEAKER_LUZ = "Luz"
+VAR SPEAKER_BEN = "Ben"
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
 
@@ -13,3 +15,8 @@ Once upon a time...
 
 - They lived happily ever after.
     -> END
+
+// Functions
+=== function resetDialogueFaces() ===
+~leftSpeaker = ""
+~rightSpeaker = ""
