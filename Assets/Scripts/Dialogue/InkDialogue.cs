@@ -10,6 +10,10 @@ public class InkDialogue : MonoBehaviour
 
     public void ShowDialogue()
     {
+        if (string.IsNullOrEmpty(knotName))
+        {
+            Debug.LogWarning($"No knot was given for {gameObject.name}");
+        }
         DialogueSystem.Instance.ShowStory(knotName);
     }
 }

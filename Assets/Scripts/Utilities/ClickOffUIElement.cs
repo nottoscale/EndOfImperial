@@ -25,7 +25,6 @@ public class ClickOffUIElement : MonoBehaviour
         //If the left mouse button is clicked.
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Testing");
             //Set up a new Pointer Event
             PointerEventData pointerEventData = new PointerEventData(eventSystem);
             pointerEventData.position = Input.mousePosition;
@@ -39,14 +38,12 @@ public class ClickOffUIElement : MonoBehaviour
             //For every result returned, check if the GameObject hit is this GameObject
             foreach (RaycastResult result in results)
             {
-                Debug.Log($"{result.gameObject} vs {gameObject}");
                 if (result.gameObject == gameObject)
                 {
                     // If we hit this GameObject, then do nothing (return)
                     return;
                 }
             }
-            Debug.Log("yay");
 
             //The user clicked off of the GameObject, so call the event.
             onClickOff.Invoke();
