@@ -1,9 +1,14 @@
 // Scenes
 INCLUDE 1_CoffeeShopNight.ink
+INCLUDE 2_CrashScene.ink
+INCLUDE 3_HospitalScene.ink
+
+
 
 // Constants
 VAR SPEAKER_LUZ = "Luz"
 VAR SPEAKER_BEN = "Ben"
+VAR SPEAKER_OFFICER = "Officer"
 
 // Variables
 VAR leftSpeaker = ""
