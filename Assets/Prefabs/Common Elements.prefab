@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 824590998}
   - component: {fileID: 824590997}
   - component: {fileID: 824590996}
+  - component: {fileID: 2073290951670118695}
   m_Layer: 5
   m_Name: Inventory Canvas
   m_TagString: Untagged
@@ -591,6 +592,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2073290951670118695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824590995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c04ba1e6ebe70845ad114651cc5fe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryButton: {fileID: 846171037}
+  inventoryContainer: {fileID: 1616999219}
 --- !u!1 &846171037
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,33 +727,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1616999219}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 846171037}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5073614863902902383}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: TogglePlayerLocked
+      - m_Target: {fileID: 2073290951670118695}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: BTN_ToggleInventory
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -976,7 +967,6 @@ GameObject:
   - component: {fileID: 1911405324}
   - component: {fileID: 8188992128964477530}
   - component: {fileID: 3032534367630389897}
-  - component: {fileID: 7610527954242780527}
   m_Layer: 5
   m_Name: Inventory Panel
   m_TagString: Untagged
@@ -1059,33 +1049,9 @@ MonoBehaviour:
   onClickOff:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1616999219}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 846171037}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5073614863902902383}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: TogglePlayerLocked
+      - m_Target: {fileID: 2073290951670118695}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: BTN_ToggleInventory
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1110,18 +1076,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 2
   m_AspectRatio: 0.70952433
---- !u!114 &7610527954242780527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911405322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c04ba1e6ebe70845ad114651cc5fe3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &618718499981333266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1289,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &8762667833855106432
 MonoBehaviour:

@@ -1,11 +1,14 @@
 // Scenes
 INCLUDE 1_CoffeeShopNight.ink
 
-// Variables
+// Constants
 VAR SPEAKER_LUZ = "Luz"
 VAR SPEAKER_BEN = "Ben"
+
+// Variables
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
+VAR presentedEvidence = ""
 
 Once upon a time...
 
