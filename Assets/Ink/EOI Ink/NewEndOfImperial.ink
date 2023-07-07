@@ -1,4 +1,10 @@
+// Scenes
 INCLUDE 1_CoffeeShopNight.ink
+
+// Variables
+VAR leftSpeaker = ""
+VAR rightSpeaker = ""
+
 Once upon a time...
 
  * There were two choices.

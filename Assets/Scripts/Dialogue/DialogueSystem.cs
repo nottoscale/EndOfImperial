@@ -13,6 +13,8 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     private Transform choicesPanel;
     [SerializeField]
     private GameObject choiceButtonPrefab;
+    [SerializeField]
+    private GameObject continueButton;
 
     private Story story;
 
@@ -35,24 +37,44 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         {
             story.ChoosePathString(knotName);
         }
-        GameManager.Instance.TogglePlayerCanMove(false);
+        GameManager.Instance.TogglePlayerLocked(true);
+        Save();
         StepThroughStory();
+    }
+
+    private void ResetChoices()
+    {
+        choicesPanel.DestroyAllChildren();
+        continueButton.SetActive(false);
     }
 
     private void StepThroughStory()
     {
+        ResetChoices();
 
-        choicesPanel.DestroyAllChildren();
         while (story.canContinue)
         {
             string text = story.Continue();
             text = text.Trim();
             //Debug.Log($"--{text}");
 
+            text = ProcessSpeakerHeads(text);
+
             ShowText(text);
         }
 
-        if (story.currentChoices.Count > 0)
+        if(story.currentChoices.Count == 1)
+        {
+            // the special continue case where we only want to 
+            // advance the dialogue
+            Choice choice = story.currentChoices[0];
+            string text = choice.text.Trim();
+            if (text == Constants.INK_CONTINUE_TAG)
+            {
+                continueButton.SetActive(true);
+            }
+        }
+        else if (story.currentChoices.Count > 0)
         {
             for (int i = 0; i < story.currentChoices.Count; i++)
             {
@@ -61,10 +83,6 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
                 // Tell the button what to do when we press it
                 button.onClick.AddListener(delegate {
                     OnClickChoiceButton(choice);
-                    if (StoryManager.Instance.shouldSave)
-                    {
-                        StoryManager.Instance.SaveStory();
-                    }
                 });
             }
         }
@@ -72,12 +90,35 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         {
             // If we've read all the content and there's no choices, the story is finished!
             HideText();
-            GameManager.Instance.TogglePlayerCanMove(true);
+            GameManager.Instance.TogglePlayerLocked(false);
+            Save();
+        }
+    }
+
+    private string ProcessSpeakerHeads(string text)
+    {
+        if(!text.Contains(Constants.INK_DIALOGUE_SPEAKER_TAG))
+        {
+            return text;
+        }
+
+        string[] splitText = text.Split(Constants.INK_DIALOGUE_SPEAKER_TAG, 2);
+
+        Debug.Log(splitText[0]);
+
+        return splitText[1];
+    }
+
+    private void Save()
+    {
+        if (StoryManager.Instance.shouldSave)
+        {
+            StoryManager.Instance.SaveStory();
         }
     }
 
     // Creates a button showing the choice text
-    Button CreateChoiceView(string text)
+    private Button CreateChoiceView(string text)
     {
         // Creates the button from a prefab
         GameObject choiceObj = Instantiate(choiceButtonPrefab, choicesPanel);
@@ -91,9 +132,15 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     }
 
     // When we click the choice button, tell the story to choose that choice!
-    void OnClickChoiceButton(Choice choice)
+    private void OnClickChoiceButton(Choice choice)
     {
         story.ChooseChoiceIndex(choice.index);
+        StepThroughStory();
+    }
+
+    public void BTN_Continue()
+    {
+        story.ChooseChoiceIndex(0);
         StepThroughStory();
     }
 }
