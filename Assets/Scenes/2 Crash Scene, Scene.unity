@@ -832,6 +832,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -64
       objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cb70466e29d347f48134ae74cb1e3d4, type: 2}
     - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -986,11 +994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0000042915344
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.75546074
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.z

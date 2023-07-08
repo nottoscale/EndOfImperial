@@ -154,8 +154,16 @@ PrefabInstance:
       propertyPath: dialogueFaces.Array.data[4]
       value: 
       objectReference: {fileID: 11400000, guid: ec7e9acb20861417681a68f96d2e3fee, type: 2}
+    - target: {fileID: 5100097057908522029, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052629625674899429, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
@@ -433,6 +441,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  debug: 0
 --- !u!1 &1041398691
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +569,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  debug: 0
 --- !u!61 &1041398696
 BoxCollider2D:
   m_ObjectHideFlags: 0
