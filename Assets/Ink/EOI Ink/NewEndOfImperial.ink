@@ -30,3 +30,4 @@ Once upon a time...
 === function resetDialogueFaces() ===
 ~leftSpeaker = ""
 ~rightSpeaker = ""
+//a
