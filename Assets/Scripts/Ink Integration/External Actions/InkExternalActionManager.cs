@@ -11,6 +11,7 @@ public static class InkExternalActionManager
         // NOTE: these actions get registered after the first call to InkExternalActionManager
         RegisterInkAction(InkExternalActionType.Debug, new DebugInkExternalAction());
         RegisterInkAction(InkExternalActionType.ChangeScene, new SceneChangeInkExternalAction());
+        RegisterInkAction(InkExternalActionType.PresentEvidence, new PresentEvidenceExternalAction());
     }
 
     public static void RegisterInkAction(InkExternalActionType type, InkExternalAction action)

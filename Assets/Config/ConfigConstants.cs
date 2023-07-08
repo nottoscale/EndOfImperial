@@ -9,5 +9,5 @@ public static class ConfigConstants
     public static string INK_DIALOGUE_SPEAKER_TAG = "::";
     public static string LEFT_SPEAKER_VAR = "leftSpeaker";
     public static string RIGHT_SPEAKER_VAR = "rightSpeaker";
-    public static string PRESENTED_EVIDENCE = "presentedEvidence";
+    public static string SUBMITTED_EVIDENCE = "submittedEvidence";
 }

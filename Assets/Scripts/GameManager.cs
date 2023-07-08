@@ -8,6 +8,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     [SerializeField]
     private GameObject _player;
     public GameObject player { get => _player; }
+    [SerializeField]
+    private Inventory _inventory;
+    public Inventory inventory { get => _inventory; }
 
     public void TogglePlayerCanMove(bool status)
     {

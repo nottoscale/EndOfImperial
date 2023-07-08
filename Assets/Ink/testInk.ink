@@ -1,10 +1,13 @@
 INCLUDE testLoop.ink
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
+EXTERNAL presentEvidence(submitKnotName)
+
 VAR test2 = 6
 VAR boolTest = false
 LIST listTest = red, orange, yellow, green, blue
 VAR currentColor = red
+VAR submittedEvidence = ""
 
 Make your choices... 
  
@@ -54,3 +57,14 @@ Make your choices...
  ~ test2++
  + Continue {test2}
     -> END
+    
+=== TestPresent ===
+Time to present
+ + [::Continue]
+ ~ presentEvidence("PresentSubmit")
+ -> DONE
+ 
+=== PresentSubmit ===
+TEST {submittedEvidence}
+ + [::Continue]
+-> DONE

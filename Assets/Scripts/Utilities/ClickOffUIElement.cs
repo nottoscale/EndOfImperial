@@ -10,7 +10,7 @@ public class ClickOffUIElement : MonoBehaviour
     public UnityEvent onClickOff;
 
     [Tooltip("Reference to the Graphic Raycaster component.")]
-    [SerializeField] private GraphicRaycaster graphicRaycaster;
+    public GraphicRaycaster graphicRaycaster;
 
     private EventSystem eventSystem;
 

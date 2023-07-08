@@ -10,4 +10,6 @@ public enum InkExternalActionType
     Debug,
     [Description("changeScene")]
     ChangeScene,
+    [Description("presentEvidence")]
+    PresentEvidence,
 }

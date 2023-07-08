@@ -16,7 +16,7 @@ VAR SPEAKER_MEDICALINVESTIGATOR = "MedicalInvestigator"
 // Variables
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
-VAR presentedEvidence = ""
+VAR submittedEvidence = ""
 
 Once upon a time...
 
@@ -31,3 +31,7 @@ Once upon a time...
 === function resetDialogueFaces() ===
 ~leftSpeaker = ""
 ~rightSpeaker = ""
+
+EXTERNAL debug(message)
+EXTERNAL changeScene(message)
+EXTERNAL presentEvidence(message)

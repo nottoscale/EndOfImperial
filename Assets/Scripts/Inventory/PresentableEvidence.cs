@@ -1,26 +1,21 @@
 using Ink.Runtime;
 using UnityEngine;
 
-public class PresentableEvidence : InkDialogue
+public class PresentableEvidence : MonoBehaviour
 {
     [SerializeField]
-    private string evidenceName;
+    private EvidenceType evidenceName;
 
     public void BTN_PresentEvidence()
     {
-        if(string.IsNullOrEmpty(evidenceName))
-        {
-            Debug.LogError($"Evidence for {gameObject.name} does not have an assigned evidence name");
-            return;
-        }
-
         SetInkPresentedEvidence();
-        ShowDialogue();
+        GameManager.Instance.inventory.SubmitEvidence();
+
     }
 
     private void SetInkPresentedEvidence()
     {
         Story thisStory = StoryManager.Instance.GetStory();
-        thisStory.variablesState[ConfigConstants.PRESENTED_EVIDENCE] = evidenceName;
+        thisStory.variablesState[ConfigConstants.SUBMITTED_EVIDENCE] = evidenceName.GetDescription();
     }
 }

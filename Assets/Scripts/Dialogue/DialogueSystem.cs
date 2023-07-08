@@ -88,7 +88,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
 
     private DialogueFaces SetupDialogueFace(string speakerName, Image speakerImage)
     {
-        if(!dialogueFaceMap.ContainsKey(speakerName))
+        if(string.IsNullOrEmpty(speakerName) || !dialogueFaceMap.ContainsKey(speakerName))
         {
             return null;
         }
@@ -133,18 +133,22 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
             ShowText(text);
         }
 
-        if(story.currentChoices.Count == 1)
+        // the special continue case where we only want to 
+        // advance the dialogue
+        if (story.currentChoices.Count == 1)
         {
-            // the special continue case where we only want to 
-            // advance the dialogue
+            
             Choice choice = story.currentChoices[0];
             string text = choice.text.Trim();
             if (text == ConfigConstants.INK_CONTINUE_TAG)
             {
                 continueButton.SetActive(true);
+                return;
             }
         }
-        else if (story.currentChoices.Count > 0)
+        
+        // Checking player choices
+        if (story.currentChoices.Count > 0)
         {
             for (int i = 0; i < story.currentChoices.Count; i++)
             {
