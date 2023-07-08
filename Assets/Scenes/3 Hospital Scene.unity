@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &676341539 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5283955790801482378, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-  m_PrefabInstance: {fileID: 852938225}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &852938225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,6 +141,34 @@ PrefabInstance:
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 396e65c730a884fe1b319f3bff308743, type: 2}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: ec7e9acb20861417681a68f96d2e3fee, type: 2}
+    - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8056426
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567168, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: orthographic size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771747687323, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_FlipX
@@ -247,6 +270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Common Elements
       objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000042915344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75546074
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
 --- !u!1 &883033857
@@ -259,7 +290,10 @@ GameObject:
   m_Component:
   - component: {fileID: 883033858}
   - component: {fileID: 883033859}
-  m_Layer: 0
+  - component: {fileID: 883033861}
+  - component: {fileID: 883033860}
+  - component: {fileID: 883033862}
+  m_Layer: 3
   m_Name: Doctor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,12 +307,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883033857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.98, y: 1.38, z: -0.89791226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1743617, y: 0.124554515, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676341539}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &883033859
@@ -333,6 +367,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &883033860
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883033857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.16, y: 11.07}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.16, y: 11.07}
+  m_EdgeRadius: 0
+--- !u!114 &883033861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883033857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knotName: HospitalSceneDoctorRoss1
+--- !u!114 &883033862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883033857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa016c58ab3931042b99ce93780e6104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 883033861}
+        m_TargetAssemblyTypeName: InkDialogue, Assembly-CSharp
+        m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1041398691
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +443,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1041398692}
   - component: {fileID: 1041398693}
-  m_Layer: 0
+  - component: {fileID: 1041398696}
+  - component: {fileID: 1041398695}
+  - component: {fileID: 1041398694}
+  m_Layer: 3
   m_Name: Investigator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,12 +460,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041398691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.87, y: 2.76, z: -0.89791226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.9356384, y: 1.5045545, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 676341539}
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1041398693
@@ -417,3 +520,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1041398694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041398691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knotName: HospitalSceneMedicalInvestigator1
+--- !u!114 &1041398695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041398691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa016c58ab3931042b99ce93780e6104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1041398694}
+        m_TargetAssemblyTypeName: InkDialogue, Assembly-CSharp
+        m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!61 &1041398696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041398691}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.26, y: 11.01}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.26, y: 11.01}
+  m_EdgeRadius: 0

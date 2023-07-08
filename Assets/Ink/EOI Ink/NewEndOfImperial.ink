@@ -9,6 +9,9 @@ INCLUDE 3_HospitalScene.ink
 VAR SPEAKER_LUZ = "Luz"
 VAR SPEAKER_BEN = "Ben"
 VAR SPEAKER_OFFICER = "Officer"
+VAR SPEAKER_DOCTORROSS = "DoctorRoss"
+VAR SPEAKER_MEDICALINVESTIGATOR = "MedicalInvestigator"
+
 
 // Variables
 VAR leftSpeaker = ""

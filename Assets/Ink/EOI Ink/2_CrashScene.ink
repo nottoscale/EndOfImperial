@@ -132,5 +132,6 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 
 //Change officer's knot - always "I think you still need to find some more clues" autogenerates until found all clues. 
+//Change officer's knot for after finding all clues
 
 -> END

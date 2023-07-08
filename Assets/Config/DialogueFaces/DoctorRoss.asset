@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b708a6924f95a4cbfc122e7019969f, type: 3}
+  m_Name: DoctorRoss
+  m_EditorClassIdentifier: 
+  _characterName: DoctorRoss
+  _characterFaceSprite: {fileID: 21300000, guid: 5b809219d235c4a2db72ce4c250c8a80, type: 3}
