@@ -1358,7 +1358,7 @@ MonoBehaviour:
   leftSpeakerImage: {fileID: 7509868682413884202}
   rightSpeakerImage: {fileID: 5232507178395654089}
   bgOverlay: {fileID: 5260247932331062868}
-  debug: 1
+  debug: 0
 --- !u!1 &918806418890429235
 GameObject:
   m_ObjectHideFlags: 0
