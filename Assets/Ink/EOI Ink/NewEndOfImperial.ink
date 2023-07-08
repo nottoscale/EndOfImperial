@@ -3,6 +3,10 @@ INCLUDE 1_CoffeeShopNight.ink
 INCLUDE 2_CrashScene.ink
 INCLUDE 3_HospitalScene.ink
 INCLUDE 4_CoronerAutopsyScene.ink
+INCLUDE 5_HospitalScene.ink
+INCLUDE 6_TurnipseedPatientRoomScene.ink
+
+
 
 // Constants
 VAR SPEAKER_LUZ = "Luz"
@@ -11,11 +15,12 @@ VAR SPEAKER_OFFICER = "Officer"
 VAR SPEAKER_DOCTORROSS = "DoctorRoss"
 VAR SPEAKER_MEDICALINVESTIGATOR = "MedicalInvestigator"
 VAR SPEAKER_CORONER = "Coroner"
+VAR SPEAKER_TURNIPSEED = "Turnipseed"
 
 // Variables
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
-VAR submittedEvidence = ""
+VAR presentedEvidence = ""
 
 Once upon a time...
 
@@ -30,7 +35,3 @@ Once upon a time...
 === function resetDialogueFaces() ===
 ~leftSpeaker = ""
 ~rightSpeaker = ""
-
-EXTERNAL debug(message)
-EXTERNAL changeScene(message)
-EXTERNAL presentEvidence(message)
