@@ -1354,10 +1354,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d0ea240b76a45004f99249586752d788, type: 2}
   - {fileID: 11400000, guid: 13a25b13721af6c47a6a4075017ae2c3, type: 2}
   - {fileID: 11400000, guid: a5d9e77d7029e4a1c97f6baf0aaee68c, type: 2}
-  dialogueFaceNonHighlight: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.39215687}
+  dialogueFaceNonHighlight: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   leftSpeakerImage: {fileID: 7509868682413884202}
   rightSpeakerImage: {fileID: 5232507178395654089}
   bgOverlay: {fileID: 5260247932331062868}
+  debug: 1
 --- !u!1 &918806418890429235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkLoader: {fileID: 995149233335043029}
-  _saveStory: 1
+  _saveStory: 0
 --- !u!114 &995149233335043029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3597,6 +3598,10 @@ PrefabInstance:
     - target: {fileID: 5659832565245750503, guid: 38499e3002a14734ebb401283fc319cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377780472306769994, guid: 38499e3002a14734ebb401283fc319cb, type: 3}
+      propertyPath: m_text
+      value: Crash Scene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38499e3002a14734ebb401283fc319cb, type: 3}

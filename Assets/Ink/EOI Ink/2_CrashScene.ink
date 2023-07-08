@@ -1,3 +1,5 @@
+VAR talkedToOfficer = false
+
 === CrashSceneBen1 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
@@ -6,10 +8,18 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 -> END
 
+=== CrashSceneOfficer0 ===
+{ talkedToOfficer:
+    -> CrashSceneOfficer4
+- else:
+    -> CrashSceneOfficer1
+}
++ [::Continue] 
+-> END
+
 === CrashSceneOfficer1 ===
 ~leftSpeaker = SPEAKER_BEN
 ~rightSpeaker = SPEAKER_OFFICER
-
 - Officer:: Wow! You guys got here fast!
 + [::Continue] 
 
@@ -130,8 +140,12 @@ Ben:: Collected all the evidence yet?
 
 - Ben:: Okay...
 + [::Continue] 
+~talkedToOfficer = true
+-> END
 
-//Change officer's knot - always "I think you still need to find some more clues" autogenerates until found all clues. 
-//Change officer's knot for after finding all clues
-
+=== CrashSceneOfficer4 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_OFFICER
+Officer:: I think you still need to find some more clues
++ [::Continue] 
 -> END

@@ -26,6 +26,8 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     private Image rightSpeakerImage;
     [SerializeField]
     private GameObject bgOverlay;
+    [SerializeField]
+    private bool debug = false;
 
     private Story story;
 
@@ -61,6 +63,10 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
 
     public void ShowStory(string knotName)
     {
+        if (debug)
+        {
+            Debug.Log($"Loading knot {knotName}");
+        }
         story = StoryManager.Instance.GetStory();
         if (!string.IsNullOrEmpty(knotName))
         {
