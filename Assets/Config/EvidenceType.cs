@@ -2,6 +2,8 @@ using System.ComponentModel;
 
 public enum EvidenceType 
 {
-    [Description("toxicologyTest")]
-    ToxicologyTest
+    [Description("testCorrect")]
+    TestCorrect,
+    [Description("testWrong")]
+    TestWrong
 }

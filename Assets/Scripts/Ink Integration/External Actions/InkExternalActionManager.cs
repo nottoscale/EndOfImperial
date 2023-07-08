@@ -12,6 +12,7 @@ public static class InkExternalActionManager
         RegisterInkAction(InkExternalActionType.Debug, new DebugInkExternalAction());
         RegisterInkAction(InkExternalActionType.ChangeScene, new SceneChangeInkExternalAction());
         RegisterInkAction(InkExternalActionType.PresentEvidence, new PresentEvidenceExternalAction());
+        RegisterInkAction(InkExternalActionType.CorrectEvidence, new CorrectEvidenceExternalAction());
     }
 
     public static void RegisterInkAction(InkExternalActionType type, InkExternalAction action)

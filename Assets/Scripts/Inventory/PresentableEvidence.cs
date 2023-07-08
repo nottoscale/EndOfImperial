@@ -8,9 +8,13 @@ public class PresentableEvidence : MonoBehaviour
 
     public void BTN_PresentEvidence()
     {
+        if(GameManager.Instance.inventory.isPresenting)
+        {
+
+        }
+
         SetInkPresentedEvidence();
         GameManager.Instance.inventory.SubmitEvidence();
-
     }
 
     private void SetInkPresentedEvidence()
@@ -19,3 +23,4 @@ public class PresentableEvidence : MonoBehaviour
         thisStory.variablesState[ConfigConstants.SUBMITTED_EVIDENCE] = evidenceName.GetDescription();
     }
 }
+    

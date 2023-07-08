@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,14 @@ public class Inventory : MonoBehaviour
     private GameObject inventoryContainer;
     [SerializeField]
     private ClickOffUIElement _clickOffDetector;
+
     public ClickOffUIElement clickOffDetector { get => _clickOffDetector; }
     [SerializeField]
     private InkDialogue inkDialogueForSubmitting;
 
-    private string submitKnot;
+    public bool isPresenting { get; private set; } = false;
 
+    private string submitKnot;
     private List<InventoryContent> subMenus = new();
 
     public void BTN_ToggleInventory(bool status)
@@ -63,6 +66,7 @@ public class Inventory : MonoBehaviour
 
     public void INK_PresentEvidence(string submitKnotName)
     {
+        isPresenting = true;
         submitKnot = submitKnotName;
         BTN_ToggleInventory(true);
     }
@@ -74,5 +78,13 @@ public class Inventory : MonoBehaviour
             Debug.LogError($"SubmitKnot is empty when trying to present evidence. Check if you are setting it from external action.");
         }
         inkDialogueForSubmitting.ShowDialogue(submitKnot);
+    }
+
+
+    public void INK_EvidenceComplete()
+    {
+        BTN_ToggleInventory(false);
+        isPresenting = false;
+        submitKnot = "";
     }
 }

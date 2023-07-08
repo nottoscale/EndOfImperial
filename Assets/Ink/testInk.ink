@@ -2,6 +2,7 @@ INCLUDE testLoop.ink
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
 EXTERNAL presentEvidence(submitKnotName)
+EXTERNAL correctEvidence(noParam)
 
 VAR test2 = 6
 VAR boolTest = false
@@ -66,5 +67,20 @@ Time to present
  
 === PresentSubmit ===
 TEST {submittedEvidence}
- + [::Continue]
+{ submittedEvidence == "testCorrect":
+    ~ correctEvidence("")
+    -> CorrectSubmission
+- else:
+    -> WrongSubmission
+}
 -> DONE
+
+=== WrongSubmission ===
+That is wrong!
++ [::Continue]
+-> DONE
+
+=== CorrectSubmission ===
+You did it!
++ [::Continue]
+->DONE

@@ -12,4 +12,6 @@ public enum InkExternalActionType
     ChangeScene,
     [Description("presentEvidence")]
     PresentEvidence,
+    [Description("correctEvidence")]
+    CorrectEvidence,
 }
