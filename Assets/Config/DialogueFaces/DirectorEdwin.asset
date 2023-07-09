@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b708a6924f95a4cbfc122e7019969f, type: 3}
-  m_Name: Turnipseed
+  m_Name: DirectorEdwin
   m_EditorClassIdentifier: 
-  _characterName: Turnipseed
-  _characterFaceSprite: {fileID: 21300000, guid: 255c7f7e71d6a4ce29480eff5950ae7b, type: 3}
+  _characterName: DirectorEdwin
+  _characterFaceSprite: {fileID: 21300000, guid: 018b2e03bba5c4a84b50292e29696006, type: 3}

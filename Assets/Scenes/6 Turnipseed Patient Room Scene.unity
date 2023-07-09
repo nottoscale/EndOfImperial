@@ -191,6 +191,10 @@ PrefabInstance:
       value: TurnipseedPatientRoomSceneTurnipseed1
       objectReference: {fileID: 0}
     - target: {fileID: 6272515794287213871, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 255c7f7e71d6a4ce29480eff5950ae7b, type: 3}
+    - target: {fileID: 6272515794287213871, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b708a6924f95a4cbfc122e7019969f, type: 3}
-  m_Name: MedicalInvestigator 1
+  m_Name: DA
   m_EditorClassIdentifier: 
-  _characterName: MedicalInvestigator
-  _characterFaceSprite: {fileID: 21300000, guid: c35d2cc3ff2fd4e15b78f3677b5beb29, type: 3}
+  _characterName: DA
+  _characterFaceSprite: {fileID: 21300000, guid: 783b0b2e648a94b21bc3e9f0ddafe34a, type: 3}

@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: knotName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1112561697636793417, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -237,6 +241,26 @@ PrefabInstance:
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: dialogueFaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cb70466e29d347f48134ae74cb1e3d4, type: 2}
+    - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8056426
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4999847
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalScale.x
@@ -302,6 +326,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Common Elements
       objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000042915344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75546074
+      objectReference: {fileID: 0}
     - target: {fileID: 8205758954624347384, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: _saveStory
       value: 1
@@ -340,11 +372,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
---- !u!4 &177044263 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5283955790801482378, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-  m_PrefabInstance: {fileID: 177044262}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &177044264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1911405322, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
@@ -378,6 +405,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c04ba1e6ebe70845ad114651cc5fe3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryButton: {fileID: 0}
+  inventoryContainer: {fileID: 0}
+  _clickOffDetector: {fileID: 0}
+  inkDialogueForSubmitting: {fileID: 0}
 --- !u!1 &812467208
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +419,10 @@ GameObject:
   m_Component:
   - component: {fileID: 812467209}
   - component: {fileID: 812467210}
-  m_Layer: 0
+  - component: {fileID: 812467212}
+  - component: {fileID: 812467211}
+  - component: {fileID: 812467213}
+  m_Layer: 3
   m_Name: Coroner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,11 +437,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812467208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.225638, y: 2.9354453, z: -0.89791226}
+  m_LocalPosition: {x: 3.42, y: 1.6799998, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 177044263}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &812467210
@@ -462,3 +496,70 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &812467211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812467208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knotName: CoronerSceneCoroner2
+--- !u!114 &812467212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812467208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa016c58ab3931042b99ce93780e6104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callbackEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 812467211}
+        m_TargetAssemblyTypeName: InkDialogue, Assembly-CSharp
+        m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  debug: 0
+--- !u!61 &812467213
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812467208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.49, y: 12.4}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.49, y: 12.4}
+  m_EdgeRadius: 0

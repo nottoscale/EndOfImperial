@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: knotName
+      value: DayCoffeeShopSceneBen1
+      objectReference: {fileID: 0}
     - target: {fileID: 1112561697636793417, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -405,6 +409,18 @@ PrefabInstance:
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.8056426
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4999847
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567168, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: orthographic size
@@ -457,6 +473,14 @@ PrefabInstance:
     - target: {fileID: 8131615772684823325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_Name
       value: Common Elements
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000042915344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75546074
       objectReference: {fileID: 0}
     - target: {fileID: 8205758954624347384, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: _saveStory
@@ -522,3 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c04ba1e6ebe70845ad114651cc5fe3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryButton: {fileID: 0}
+  inventoryContainer: {fileID: 0}
+  _clickOffDetector: {fileID: 0}
+  inkDialogueForSubmitting: {fileID: 0}
