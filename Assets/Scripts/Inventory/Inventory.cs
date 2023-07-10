@@ -42,6 +42,12 @@ public class Inventory : MonoBehaviour
 
     public void BTN_BackButton()
     {
+        // don't do anything if they are working through dialogue right now
+        if (DialogueSystem.Instance.isTalking)
+        {
+            return;
+        }
+
         if (subMenus.Count <= 0)
         {
             BTN_ToggleInventory(false);

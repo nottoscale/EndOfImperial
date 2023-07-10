@@ -29,6 +29,8 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     [SerializeField]
     private bool debug = false;
 
+    public bool isTalking { get; private set; } = false;
+
     private Story story;
 
     // map of the character names to the sprites for easy access
@@ -67,13 +69,13 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         {
             Debug.Log($"Loading knot {knotName}");
         }
+        isTalking = true;
         story = StoryManager.Instance.GetStory();
         if (!string.IsNullOrEmpty(knotName))
         {
             story.ChoosePathString(knotName);
         }
         GameManager.Instance.TogglePlayerLocked(true);
-        Save();
         StepThroughStory();
     }
 
@@ -163,10 +165,16 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         else
         {
             // If we've read all the content and there's no choices, the story is finished!
-            Hide();
-            GameManager.Instance.TogglePlayerLocked(false);
-            Save();
+            EndDialogue();
         }
+    }
+
+    private void EndDialogue()
+    {
+        Hide();
+        GameManager.Instance.TogglePlayerLocked(false);
+        Save();
+        isTalking = false;
     }
 
     private string ProcessDialogueFaces(string text)

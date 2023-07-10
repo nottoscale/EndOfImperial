@@ -8,9 +8,9 @@ public class PresentableEvidence : MonoBehaviour
 
     public void BTN_PresentEvidence()
     {
-        if(GameManager.Instance.inventory.isPresenting)
+        if(!GameManager.Instance.inventory.isPresenting)
         {
-
+            return;
         }
 
         SetInkPresentedEvidence();
