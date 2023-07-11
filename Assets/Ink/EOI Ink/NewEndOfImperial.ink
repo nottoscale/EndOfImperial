@@ -1,3 +1,8 @@
+EXTERNAL debug(message)
+EXTERNAL changeScene(message)
+EXTERNAL presentEvidence(submitKnotName)
+EXTERNAL correctEvidence(noParam)
+
 // Scenes
 INCLUDE 1_CoffeeShopNight.ink
 INCLUDE 2_CrashScene.ink
@@ -14,7 +19,6 @@ INCLUDE 12_PoliceStationScene.ink
 INCLUDE 13_DAOfficeScene.ink
 INCLUDE 14_TurnipseedPatientRoomScene.ink
 
-
 // Constants
 VAR SPEAKER_LUZ = "Luz"
 VAR SPEAKER_BEN = "Ben"
@@ -29,7 +33,7 @@ VAR SPEAKER_DIRECTOREDWIN = "DirectorEdwin"
 // Variables
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
-VAR presentedEvidence = ""
+VAR submittedEvidence = ""
 
 Once upon a time...
 

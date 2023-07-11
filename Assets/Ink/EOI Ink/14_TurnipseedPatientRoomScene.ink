@@ -7,7 +7,7 @@
 
 - Luz:: I'm so tired. I could fall asleep right here.
 + [::Continue] 
-->TurnipseedPatientRoomSceneTurnipseed2
+->END
 
 === TurnipseedPatientRoomSceneTurnipseed2 ===
 ~leftSpeaker = SPEAKER_LUZ
