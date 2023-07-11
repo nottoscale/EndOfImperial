@@ -35,6 +35,9 @@ VAR leftSpeaker = ""
 VAR rightSpeaker = ""
 VAR submittedEvidence = ""
 
+// Map pin variables
+VAR canGoToHospital = false
+
 Once upon a time...
 
  * There were two choices.

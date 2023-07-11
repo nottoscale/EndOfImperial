@@ -1061,22 +1061,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -1220,14 +1204,6 @@ PrefabInstance:
     - target: {fileID: 8131615772696454253, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432255560361656281, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_Name
-      value: 'Map '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432255560361656281, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8734713302721438487, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x

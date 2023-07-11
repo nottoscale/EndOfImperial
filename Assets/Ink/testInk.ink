@@ -10,6 +10,8 @@ LIST listTest = red, orange, yellow, green, blue
 VAR currentColor = red
 VAR submittedEvidence = ""
 
+VAR canGoToHospital = false
+
 Make your choices... 
  
  + [Test Option] it works

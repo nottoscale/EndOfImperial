@@ -42,4 +42,5 @@
 
 - Luz:: You're a detective now, Romero. That's the job. Come on, let's go see what we're dealing with. 
 ~resetDialogueFaces()
+~canGoToHospital = true
 -> END
