@@ -13,6 +13,8 @@ public static class InkExternalActionManager
         RegisterInkAction(InkExternalActionType.ChangeScene, new SceneChangeInkExternalAction());
         RegisterInkAction(InkExternalActionType.PresentEvidence, new PresentEvidenceExternalAction());
         RegisterInkAction(InkExternalActionType.CorrectEvidence, new CorrectEvidenceExternalAction());
+        RegisterInkAction(InkExternalActionType.ReceiveInventoryItem, new ReceiveInventoryItemExternalAction());
+        RegisterInkAction(InkExternalActionType.ReceiveAndQuizInventoryItem, new ReceiveAndQuizInventoryItemExternalAction());
     }
 
     public static void RegisterInkAction(InkExternalActionType type, InkExternalAction action)

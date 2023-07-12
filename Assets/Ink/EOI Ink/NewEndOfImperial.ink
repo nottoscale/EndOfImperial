@@ -1,6 +1,16 @@
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
+
+// itemName::Continue Knot
+// shows inventory item and allows player to close whenever
+EXTERNAL receiveInventoryItem(itemNameAndContinueKnot)
+// same as receive but there may be quiz knots 
+// before we can close
+EXTERNAL receiveAndQuizInventoryItem(itemNameAndContinueKnot)
+
+// allows player to present evidence from inventory
 EXTERNAL presentEvidence(submitKnotName)
+// tell unity that player has selected the right evidence
 EXTERNAL correctEvidence(noParam)
 
 // Scenes
@@ -19,7 +29,7 @@ INCLUDE 12_PoliceStationScene.ink
 INCLUDE 13_DAOfficeScene.ink
 INCLUDE 14_TurnipseedPatientRoomScene.ink
 
-// Constants
+// Characters
 VAR SPEAKER_LUZ = "Luz"
 VAR SPEAKER_BEN = "Ben"
 VAR SPEAKER_OFFICER = "Officer"
@@ -30,7 +40,11 @@ VAR SPEAKER_TURNIPSEED = "Turnipseed"
 VAR SPEAKER_DA = "DA"
 VAR SPEAKER_DIRECTOREDWIN = "DirectorEdwin"
 
-// Variables
+// Inventory Items
+VAR TURNIP_PROFILE = "InventoryTurnipProfile"
+VAR TURNIP_PHONE = "InventoryTurnipPhone"
+
+// Global Variables
 VAR leftSpeaker = ""
 VAR rightSpeaker = ""
 VAR submittedEvidence = ""

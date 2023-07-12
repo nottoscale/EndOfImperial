@@ -37,6 +37,10 @@ public class Interact : MonoBehaviour
 
     public void ToggleCanInteract(bool status)
     {
+        if(debug)
+        {
+            Debug.Log($"Interact status set to {status}");
+        }
         canInteract = status;
     }
 }

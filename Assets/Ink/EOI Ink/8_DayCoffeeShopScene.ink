@@ -21,5 +21,15 @@
 + [::Continue] 
 
 //pulls up mobile service usage report
+ ~ receiveAndQuizInventoryItem("{TURNIP_PHONE}::DayCoffeeShopSceneBen2")
+-> END
 
+=== DayCoffeeShopSceneBenQuiz1 === 
+This is the text that show when you click the right quiz hotspot.
++ [::Continue] 
+-> END
+
+=== DayCoffeeShopSceneBen2 === 
+Insert after phone conversation here.
++ [::Continue] 
 -> END

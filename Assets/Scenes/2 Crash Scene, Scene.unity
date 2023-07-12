@@ -276,7 +276,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: CrashSceneOfficer0
+  _knotName: CrashSceneOfficer1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &456361094
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +701,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: knotName
+      value: CrashSceneBen1
+      objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _knotName
       value: CrashSceneBen1
       objectReference: {fileID: 0}
     - target: {fileID: 1077825915330002877, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}

@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: knotName
       value: TurnipseedPatientRoomSceneBen2
       objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _knotName
+      value: TurnipseedPatientRoomSceneBen2
+      objectReference: {fileID: 0}
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -373,6 +377,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6053157603309448272, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
       propertyPath: knotName
+      value: TurnipseedPatientRoomSceneTurnipseed2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053157603309448272, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
+      propertyPath: _knotName
       value: TurnipseedPatientRoomSceneTurnipseed2
       objectReference: {fileID: 0}
     - target: {fileID: 6272515794287213871, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}

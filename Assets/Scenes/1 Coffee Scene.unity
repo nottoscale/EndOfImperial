@@ -949,6 +949,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _knotName
+      value: CoffeeShopNightBen1
+      objectReference: {fileID: 0}
     - target: {fileID: 1077825915330002877, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

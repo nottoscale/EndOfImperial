@@ -23,7 +23,7 @@ public class ClickOffUIElement : MonoBehaviour
     void Update()
     {
         //If the left mouse button is clicked.
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             //Set up a new Pointer Event
             PointerEventData pointerEventData = new PointerEventData(eventSystem);

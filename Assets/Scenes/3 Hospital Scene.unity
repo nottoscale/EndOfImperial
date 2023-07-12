@@ -413,7 +413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: HospitalSceneDoctorRoss1
+  _knotName: HospitalSceneDoctorRoss1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &883033862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: HospitalSceneMedicalInvestigator1
+  _knotName: HospitalSceneDoctorRoss1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1041398695
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -86,7 +86,10 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 
 //turnipseed's profile appears
+ ~ receiveInventoryItem("{TURNIP_PROFILE}::CrashSceneOfficer3")
+-> END
 
+=== CrashSceneOfficer3 ===
 - Luz:: Hmmmm. Drunk driving conviction from a few years back. 
 + [::Continue] 
 
@@ -97,9 +100,9 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 
 - Officer:: I'm sending it to you now, detective. 
--> CrashSceneOfficer3
+-> CrashSceneOfficer4
 
-=== CrashSceneOfficer3 ===
+=== CrashSceneOfficer4 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
 
@@ -143,7 +146,7 @@ Ben:: Collected all the evidence yet?
 ~talkedToOfficer = true
 -> END
 
-=== CrashSceneOfficer4 ===
+=== CrashSceneOfficer5 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_OFFICER
 Officer:: I think you still need to find some more clues

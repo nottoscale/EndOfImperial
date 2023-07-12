@@ -408,6 +408,7 @@ MonoBehaviour:
   inventoryButton: {fileID: 0}
   inventoryContainer: {fileID: 0}
   _clickOffDetector: {fileID: 0}
+  allContent: []
   inkDialogueForSubmitting: {fileID: 0}
 --- !u!1 &812467208
 GameObject:
@@ -508,7 +509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: CoronerSceneCoroner2
+  _knotName: CoronerSceneCoroner2
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &812467212
 MonoBehaviour:
   m_ObjectHideFlags: 0

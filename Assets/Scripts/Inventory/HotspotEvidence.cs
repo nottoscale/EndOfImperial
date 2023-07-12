@@ -1,7 +1,7 @@
 using Ink.Runtime;
 using UnityEngine;
 
-public class PresentableEvidence : MonoBehaviour
+public class HotspotEvidence : MonoBehaviour
 {
     [SerializeField]
     private EvidenceType evidenceName;

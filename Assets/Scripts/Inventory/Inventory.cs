@@ -11,28 +11,42 @@ public class Inventory : MonoBehaviour
     private GameObject inventoryContainer;
     [SerializeField]
     private ClickOffUIElement _clickOffDetector;
+    [SerializeField]
+    private InventoryContent[] allContent;
 
     public ClickOffUIElement clickOffDetector { get => _clickOffDetector; }
     [SerializeField]
     private InkDialogue inkDialogueForSubmitting;
 
     public bool isPresenting { get; private set; } = false;
+    public bool isReceivingItem { get; private set; } = false;
 
-    private string submitKnot;
+    private bool isQuiz = false;
+    private string submitKnot; // for submitting evidence
+    private string continueKnot; // for continueing after receiving item
     private List<InventoryContent> subMenus = new();
+    private Dictionary<string, InventoryContent> allContentMap = new();
+    private InventoryContent receivedItem;
+
+    private void Start()
+    {
+        foreach(InventoryContent content in allContent)
+        {
+            allContentMap.Add(content.inventoryItem.GetDescription(), content);
+        }
+    }
 
     public void BTN_ToggleInventory(bool status)
     {
         inventoryButton.SetActive(!status);
         inventoryContainer.SetActive(status);
         GameManager.Instance.TogglePlayerLocked(status);
-        //clickOffDetector.enabled = status;
     }
 
     public void RegisterSubMenu(InventoryContent subMenu)
     {
         clickOffDetector.enabled = false;
-        foreach(InventoryContent menu in subMenus)
+        foreach (InventoryContent menu in subMenus)
         {
             menu.ToggleClickOffUI(false);
         }
@@ -42,9 +56,22 @@ public class Inventory : MonoBehaviour
 
     public void BTN_BackButton()
     {
-        // don't do anything if they are working through dialogue right now
+        // don't do anything if they are working through dialogue or quiz right now
         if (DialogueSystem.Instance.isTalking)
         {
+            return;
+        }
+
+        if (isReceivingItem)
+        {
+            if (isQuiz)
+            {
+                return;
+            }
+
+            isReceivingItem = false;
+            isQuiz = false;
+            ToggleInventoryForReceiveItem(false);
             return;
         }
 
@@ -58,7 +85,6 @@ public class Inventory : MonoBehaviour
         latestMenu.BTN_ToggleContent(false);
         subMenus.RemoveAt(subMenus.Count - 1);
 
-        Debug.Log(subMenus.Count);
         if (subMenus.Count <= 0)
         {
             clickOffDetector.enabled = true;
@@ -92,5 +118,41 @@ public class Inventory : MonoBehaviour
         BTN_ToggleInventory(false);
         isPresenting = false;
         submitKnot = "";
+    }
+
+    public void INK_ReceiveInventoryItem(string itemName, string continueKnotName, bool isQuiz)
+    {
+        if(!allContentMap.ContainsKey(itemName))
+        {
+            Debug.LogError($"Could not find inventory content with name {itemName}. Did you add it to \"allContent\" in the Inventory Component? ");
+            return;
+        }
+        this.isQuiz = isQuiz;
+        continueKnot = continueKnotName;
+        receivedItem = allContentMap[itemName];
+        ToggleInventoryForReceiveItem(true);
+    }
+
+    private void ToggleInventoryForReceiveItem(bool status)
+    {
+        BTN_ToggleInventory(status);
+        receivedItem.gameObject.SetActive(status);
+        isReceivingItem = status;
+
+        if (!status)
+        {
+            isQuiz = false;
+
+            if (string.IsNullOrEmpty(continueKnot))
+            {
+                Debug.LogError($"continueKnot is empty when trying to present evidence. Check if you are setting it from external action.");
+            }
+            inkDialogueForSubmitting.ShowDialogue(continueKnot);
+        }
+    }
+
+    public void BTN_CompleteQuiz()
+    {
+        isQuiz = false;
     }
 }

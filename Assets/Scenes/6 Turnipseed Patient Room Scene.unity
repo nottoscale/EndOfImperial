@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: knotName
       value: TurnipseedPatientRoomSceneTurnipseed1
       objectReference: {fileID: 0}
+    - target: {fileID: 6053157603309448272, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
+      propertyPath: _knotName
+      value: TurnipseedPatientRoomSceneTurnipseed1
+      objectReference: {fileID: 0}
     - target: {fileID: 6272515794287213871, guid: 6261da636e2704c618cb5b26623d4e4b, type: 3}
       propertyPath: m_Sprite
       value: 

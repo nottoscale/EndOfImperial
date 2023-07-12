@@ -38,6 +38,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
 
     private DialogueFaces leftSpeaker;
     private DialogueFaces rightSpeaker;
+    private InkDialogue currentDialogue;
 
     private void Start()
     {
@@ -63,8 +64,10 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         bgOverlay.SetActive(false);
     }
 
-    public void ShowStory(string knotName)
+    public void ShowStory(InkDialogue dialogue)
     {
+        string knotName = dialogue.knotName;
+        currentDialogue = dialogue;
         if (debug)
         {
             Debug.Log($"Loading knot {knotName}");
@@ -172,9 +175,15 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     private void EndDialogue()
     {
         Hide();
-        GameManager.Instance.TogglePlayerLocked(false);
         Save();
         isTalking = false;
+        currentDialogue.OnDialogueEnd();
+        currentDialogue = null;
+
+        if(!GameManager.Instance.inventory.isPresenting && !GameManager.Instance.inventory.isReceivingItem)
+        {
+            GameManager.Instance.TogglePlayerLocked(false);
+        }
     }
 
     private string ProcessDialogueFaces(string text)

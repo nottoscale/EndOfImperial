@@ -344,6 +344,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: debug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: dialogueFaces.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -353,6 +357,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: ec7e9acb20861417681a68f96d2e3fee, type: 2}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771408928701, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: debug
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
@@ -631,4 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: DAOfficeSceneDA1
+  _knotName: DAOfficeSceneDA1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []

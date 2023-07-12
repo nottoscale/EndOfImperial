@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: knotName
       value: PoliceStationSceneBen1
       objectReference: {fileID: 0}
+    - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _knotName
+      value: PoliceStationSceneBen1
+      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -498,7 +502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: PoliceStationSceneOfficer1
+  _knotName: PoliceStationSceneOfficer1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1051579975
 MonoBehaviour:
   m_ObjectHideFlags: 0
