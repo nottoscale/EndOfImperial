@@ -23,7 +23,15 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     [SerializeField]
     private Image leftSpeakerImage;
     [SerializeField]
+    private GameObject leftSpeakerNameCard;
+    [SerializeField]
+    private TMP_Text leftSpeakerName;
+    [SerializeField]
     private Image rightSpeakerImage;
+    [SerializeField]
+    private GameObject rightSpeakerNameCard;
+    [SerializeField]
+    private TMP_Text rightSpeakerName;
     [SerializeField]
     private GameObject bgOverlay;
     [SerializeField]
@@ -200,9 +208,15 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
         if (leftSpeaker != null && speakerName == leftSpeaker.characterName)
         {
             HightlightFace(leftSpeakerImage);
+            leftSpeakerName.text = leftSpeaker.characterName;
+            leftSpeakerNameCard.SetActive(true);
+            rightSpeakerNameCard.SetActive(false);
         } else if(rightSpeaker != null && speakerName == rightSpeaker.characterName)
         {
             HightlightFace(rightSpeakerImage);
+            rightSpeakerName.text = rightSpeaker.characterName;
+            leftSpeakerNameCard.SetActive(false);
+            rightSpeakerNameCard.SetActive(true);
         }
         string spokenText = splitText[1];
 
