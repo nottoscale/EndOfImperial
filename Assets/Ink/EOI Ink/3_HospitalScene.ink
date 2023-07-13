@@ -94,6 +94,3 @@
 - MedicalInvestigator:: Better go quick before the public gets there!
 + [::Continue]
 -> END
-
-
-

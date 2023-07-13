@@ -105,13 +105,3 @@
 
 - Luz:: Look, Romero, I'm heading to the station to see if the traffic cam footage is ready. You can meet me there, if you're not too busy. 
 -> END
-
-
-
-
-
-
-
-
-
-

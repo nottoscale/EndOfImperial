@@ -2,10 +2,14 @@ using System.ComponentModel;
 
 public enum InventoryItem 
 {
-    [Description("InventoryTurnipProfile")]
+    [Description("InventoryTurnipseedProfile")]
     TurnipseedProfile,
-    [Description("InventoryTurnipPhone")]
+    [Description("InventoryStarkProfile")]
+    StarkProfile,
+    [Description("InventoryTurnipseedPhone")]
     TurnipseedPhoneRecord,
+    [Description("InventoryStarkPhone")]
+    StarkPhoneRecord,
     [Description("test")]
     TestItem
 }

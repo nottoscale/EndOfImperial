@@ -21,15 +21,57 @@
 + [::Continue] 
 
 //pulls up mobile service usage report
- ~ receiveAndQuizInventoryItem("{TURNIP_PHONE}::DayCoffeeShopSceneBen2")
+ ~ receiveAndQuizInventoryItem("{TURNIPSEED_PHONE}::DayCoffeeShopSceneBenQuiz2Question")
 -> END
 
-=== DayCoffeeShopSceneBenQuiz1 === 
-This is the text that show when you click the right quiz hotspot.
+//prompt: When was his last call? 
+
+=== DayCoffeeShopSceneBenQuiz1Answer === 
+//when you get it correct
+~resetDialogueFaces()
+Looks like it was well before the crash. 
 + [::Continue] 
 -> END
 
-=== DayCoffeeShopSceneBen2 === 
-Insert after phone conversation here.
+=== DayCoffeeShopSceneBenQuiz2Question === 
+~resetDialogueFaces()
+ ~ receiveAndQuizInventoryItem("{STARK_PHONE}::DayCoffeeShopSceneBen3")
+-> END
+
+=== DayCoffeeShopSceneBenQuiz2Answer === 
+~resetDialogueFaces()
+Looks like it was well before the crash. 
++ [::Continue] 
+-> END
+
+=== DayCoffeeShopSceneBen3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+
+- Luz:: Okay. Let's head out to the movie set. The DA wants us to rule out Bryon Stark as a suspect. 
++ [::Continue] 
+
+- Ben:: Yeah, but Luz? 
++ [::Continue] 
+
+- Luz:: Yeah? 
++ [::Continue] 
+
+- Ben:: You should really give this sleep thing a try. 
++ [::Continue] 
+
+- Luz:: I would, but who needs sleep when you have coffee? 
++ [::Continue] 
+
+- Ben:: Sleep helps your long-term memory. It helps you process the day's events.
++ [::Continue] 
+
+- Luz:: My memory's fine! And I'm a detective! I process events all the time. 
++ [::Continue] 
+
+- Ben:: It's also where you process emotions. And it reduces depression and anxiety. 
++ [::Continue] 
+
+- Luz:: Are you saying I'm MOODY? I don't have time for that. And we're wasting time, Romero. Let's get going. 
 + [::Continue] 
 -> END

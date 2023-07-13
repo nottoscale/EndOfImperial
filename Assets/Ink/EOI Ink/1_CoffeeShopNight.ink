@@ -4,6 +4,11 @@
 - Ben:: What a night, huh? 
 + [::Continue] 
 
+//+ Nice
+//-> CoffeeShopNightNice
+//+ Mean
+//-> CoffeeShopNightMean
+
 - Luz:: It's not over yet. 
 + [::Continue] 
 

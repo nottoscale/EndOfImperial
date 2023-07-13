@@ -41,8 +41,11 @@ VAR SPEAKER_DA = "DA"
 VAR SPEAKER_DIRECTOREDWIN = "DirectorEdwin"
 
 // Inventory Items
-VAR TURNIP_PROFILE = "InventoryTurnipProfile"
-VAR TURNIP_PHONE = "InventoryTurnipPhone"
+VAR TURNIPSEED_PROFILE = "InventoryTurnipseedProfile"
+VAR STARK_PROFILE = "InventoryStarkProfile"
+VAR TURNIPSEED_PHONE = "InventoryTurnipseedPhone"
+VAR STARK_PHONE = "InventoryStarkPhone"
+
 
 // Global Variables
 VAR leftSpeaker = ""

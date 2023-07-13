@@ -280,6 +280,17 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &292607094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1065768871865553936, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+  m_PrefabInstance: {fileID: 1560179378}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342c63ffdc133cb4b983686350a28ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &456361094
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +710,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 449130410133789739, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: knotName
       value: CrashSceneBen1
@@ -839,6 +854,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -64
       objectReference: {fileID: 0}
+    - target: {fileID: 2073290951670118695, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: allContent.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073290951670118695, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: allContent.Array.data[2]
+      value: 
+      objectReference: {fileID: 292607094}
     - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: dialogueFaces.Array.size
       value: 4
@@ -847,6 +870,10 @@ PrefabInstance:
       propertyPath: dialogueFaces.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 3cb70466e29d347f48134ae74cb1e3d4, type: 2}
+    - target: {fileID: 3888172706828061757, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _inventoryItem
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -871,6 +898,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Crash Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 5101261171951513551, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: _inventoryItem
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -879,13 +910,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 3 Hospital Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 8131615771408928704, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771408928704, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.91
+      objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.8056426
+      value: 2.4499998
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4999847
+      value: 2.4999712
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -929,11 +968,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.31
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131615771747687325, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772222539117, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_NavMeshData
@@ -1001,11 +1052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000042915344
+      value: -5.2699995
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75546074
+      value: 0.41002893
       objectReference: {fileID: 0}
     - target: {fileID: 8131615772696454252, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.z

@@ -10,7 +10,7 @@ Ben:: Collected all the evidence yet?
 
 === CrashSceneOfficer0 ===
 { talkedToOfficer:
-    -> CrashSceneOfficer4
+    -> CrashSceneOfficer6
 - else:
     -> CrashSceneOfficer1
 }
@@ -86,7 +86,7 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 
 //turnipseed's profile appears
- ~ receiveInventoryItem("{TURNIP_PROFILE}::CrashSceneOfficer3")
+ ~ receiveInventoryItem("{TURNIPSEED_PROFILE}::CrashSceneOfficer3")
 -> END
 
 === CrashSceneOfficer3 ===
@@ -119,6 +119,10 @@ Ben:: Collected all the evidence yet?
 + [::Continue] 
 
 //stark's profile appears
+ ~ receiveInventoryItem("{STARK_PROFILE}::CrashSceneOfficer5")
+-> END
+
+ === CrashSceneOfficer5
 
 - Ben:: Holy cucamonga... Bryon Stark? THE Bryon Stark? 
 + [::Continue] 
@@ -146,9 +150,10 @@ Ben:: Collected all the evidence yet?
 ~talkedToOfficer = true
 -> END
 
-=== CrashSceneOfficer5 ===
+=== CrashSceneOfficer6 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_OFFICER
+
 Officer:: I think you still need to find some more clues
 + [::Continue] 
 -> END
