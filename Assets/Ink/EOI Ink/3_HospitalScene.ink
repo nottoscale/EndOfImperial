@@ -94,3 +94,15 @@
 - MedicalInvestigator:: Better go quick before the public gets there!
 + [::Continue]
 -> END
+
+=== HospitalSceneDoctorRoss2 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_DOCTORROSS
+
+- DoctorRoss:: I have patients to see. 
++ [::Continue] 
+-> END
+
+- MedicalInvestigator:: Never a dull moment here. Always more work to be done. 
++ [::Continue] 
+-> END

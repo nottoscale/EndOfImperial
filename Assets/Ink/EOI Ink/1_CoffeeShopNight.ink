@@ -49,3 +49,10 @@
 ~resetDialogueFaces()
 ~canGoToHospital = true
 -> END
+
+=== CoffeeShopNightBen2 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+- Ben:: Really should be getting to that accident. Don't want the watch captain to think we're napping.  
++ [::Continue] 
+-> END

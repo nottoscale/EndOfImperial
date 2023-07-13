@@ -1,4 +1,4 @@
-=== TurnipseedPatientRoomSceneBen2 ===
+=== TurnipseedPatientRoomSceneBen3 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
 
@@ -9,7 +9,7 @@
 + [::Continue] 
 ->END
 
-=== TurnipseedPatientRoomSceneTurnipseed2 ===
+=== TurnipseedPatientRoomSceneTurnipseed3 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_TURNIPSEED
 

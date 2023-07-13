@@ -89,3 +89,20 @@
 - Luz:: Let's go see the coroner. 
 + [::Continue] 
 -> END
+
+
+=== MovieSetSceneBen3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+
+- Luz:: Maybe we're missing something. 
++ [::Continue] 
+-> END
+
+=== MovieSetSceneDirectorEdwin3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_DIRECTOREDWIN
+
+- DirectorEdwin::I've got a movie to make.
++ [::Continue] 
+-> END

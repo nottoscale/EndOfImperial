@@ -20,3 +20,8 @@
 - Ben:: Come on. Let's go talk to Mr. Turnipseed.
 + [::Continue] 
 -> END
+
+=== HospitalSceneBen2 ===
+- Ben:: Turnipseed is in his room. 
++ [::Continue] 
+-> END

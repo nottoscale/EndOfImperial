@@ -89,4 +89,11 @@
 - Luz:: Thank you, Officer Robinson.
 + [::Continue] 
 -> END
+
+=== PoliceStationSceneOfficer4 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+
+- Ben:: Go Luz! I believe in you. 
++ [::Continue] 
 -> END

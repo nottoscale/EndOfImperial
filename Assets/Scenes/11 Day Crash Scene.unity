@@ -183,7 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf4bc8ef0b948342adeb9b350c863c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knotName: DayCrashScenePhone1
+  _knotName: DayCrashScenePhone1
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &662658398
 BoxCollider2D:
   m_ObjectHideFlags: 0

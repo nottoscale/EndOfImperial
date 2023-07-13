@@ -10,6 +10,8 @@ public enum InventoryItem
     TurnipseedPhoneRecord,
     [Description("InventoryStarkPhone")]
     StarkPhoneRecord,
+    [Description("InventoryAutopsyReport")]
+    AutopsyReport,
     [Description("test")]
     TestItem
 }

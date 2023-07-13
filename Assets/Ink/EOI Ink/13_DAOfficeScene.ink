@@ -103,3 +103,10 @@
 - DA:: Now go wrap this up with Turnipseed. 
 + [::Continue] 
 -> END
+
+=== DAOfficeSceneDA3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_DA
+- DA:: Keep gathering evidence. The more evidence, the more open and shut this case will be. 
++ [::Continue] 
+-> END

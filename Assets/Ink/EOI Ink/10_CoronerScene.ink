@@ -5,7 +5,7 @@
 - Coroner:: Hello, Luz... And you must be Luz's partner. 
 + [::Continue] 
 
-- Coroner:: The toxicology reports are in!  
+- Coroner:: Welcome back to the autopsy room. The toxicology reports are in!  
 + [::Continue] 
 
 - Luz:: Thanks. Let's see what we've got. 
@@ -104,4 +104,11 @@
 + [::Continue] 
 
 - Luz:: Look, Romero, I'm heading to the station to see if the traffic cam footage is ready. You can meet me there, if you're not too busy. 
+-> END
+
+=== CoronerSceneCoroner4 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_CORONER
+- Coroner:: It's O.K. Luz, just take a deep breath.
++ [::Continue] 
 -> END

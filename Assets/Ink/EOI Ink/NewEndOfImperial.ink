@@ -28,6 +28,20 @@ INCLUDE 11_DayCrashScene.ink
 INCLUDE 12_PoliceStationScene.ink
 INCLUDE 13_DAOfficeScene.ink
 INCLUDE 14_TurnipseedPatientRoomScene.ink
+INCLUDE CutSceneBeforeCoffeeShopNight.ink
+INCLUDE CutSceneBeforeHospital.ink
+INCLUDE CutSceneBeforeCoronerAutopsyScene.ink
+INCLUDE CutSceneBeforeHospitalScene2.ink
+INCLUDE CutSceneBeforeCoronerScene2.ink
+INCLUDE CutSceneBeforeDayCrashScene.ink
+INCLUDE CutSceneEnding.ink
+
+
+
+
+
+
+
 
 // Characters
 VAR SPEAKER_LUZ = "Luz"
@@ -45,6 +59,7 @@ VAR TURNIPSEED_PROFILE = "InventoryTurnipseedProfile"
 VAR STARK_PROFILE = "InventoryStarkProfile"
 VAR TURNIPSEED_PHONE = "InventoryTurnipseedPhone"
 VAR STARK_PHONE = "InventoryStarkPhone"
+VAR AUTOPSY_REPORT = "InventoryAutopsyReport"
 
 
 // Global Variables

@@ -13,8 +13,10 @@
 
 - Coroner:: Here's the preliminary report. Take a look.
 + [::Continue] 
--> CoronerAutopsySceneCoroner2
+
 //show autopsy report
+ ~ receiveInventoryItem("{AUTOPSY_REPORT}::CoronerAutopsySceneCoroner2")
+-> END
 
 === CoronerAutopsySceneCoroner2 ===
 

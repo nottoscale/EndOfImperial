@@ -75,3 +75,11 @@ Looks like it was well before the crash.
 - Luz:: Are you saying I'm MOODY? I don't have time for that. And we're wasting time, Romero. Let's get going. 
 + [::Continue] 
 -> END
+
+=== DayCoffeeShopSceneBen4 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+
+- Ben:: O.K., let's go to the movie set. 
++ [::Continue] 
+-> END

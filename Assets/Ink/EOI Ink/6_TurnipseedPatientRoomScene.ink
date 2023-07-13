@@ -1,3 +1,11 @@
+=== TurnipseedPatientRoomSceneBen1 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_BEN
+
+- Ben:: We're here to interview Mr. Turnipseed.
++ [::Continue] 
+-> END
+
 === TurnipseedPatientRoomSceneTurnipseed1 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_TURNIPSEED
@@ -82,11 +90,11 @@
 
 - Phone: DA: I need an update on this case- stat
 + [::Continue] 
--> TurnipseedPatientRoomSceneBen1
+-> TurnipseedPatientRoomSceneBen2
 
 //walk to Ben 
 
-=== TurnipseedPatientRoomSceneBen1 ===
+=== TurnipseedPatientRoomSceneBen2 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
 
@@ -104,4 +112,18 @@
 
 - Luz:: Fine. I'll talk to the DA. You can catch up once you've gotten your beauty sleep.
 + [::Continue] 
+-> END
+
+=== TurnipseedPatientRoomSceneTurnipseed2 ===
+~leftSpeaker = SPEAKER_BEN
+~rightSpeaker = SPEAKER_TURNIPSEED
+
+- Ben:: Eric, you've got to have more to your story
++ [::Continue] 
+
+- Ben:: Anything else? 
++ [::Continue] 
+
+- Turnipseed:: I've told you everything, detective.
++ [::Continue]
 -> END
