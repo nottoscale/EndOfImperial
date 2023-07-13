@@ -198,13 +198,14 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
     {
         if(!text.Contains(ConfigConstants.INK_DIALOGUE_SPEAKER_TAG))
         {
+            leftSpeakerNameCard.SetActive(false);
+            rightSpeakerNameCard.SetActive(false);
             return text;
         }
 
         string[] splitText = text.Split(ConfigConstants.INK_DIALOGUE_SPEAKER_TAG, 2);
 
         string speakerName = splitText[0];
-
         if (leftSpeaker != null && speakerName == leftSpeaker.characterName)
         {
             HightlightFace(leftSpeakerImage);
@@ -218,6 +219,7 @@ public class DialogueSystem : SingletonMonoBehaviour<DialogueSystem>
             leftSpeakerNameCard.SetActive(false);
             rightSpeakerNameCard.SetActive(true);
         }
+
         string spokenText = splitText[1];
 
         return spokenText;

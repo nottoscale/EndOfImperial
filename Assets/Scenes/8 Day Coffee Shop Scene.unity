@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342c63ffdc133cb4b983686350a28ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1606352661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6019460302274896803, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+  m_PrefabInstance: {fileID: 2093499912}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880360035
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +422,34 @@ PrefabInstance:
       propertyPath: _knotName
       value: DayCoffeeShopSceneBenQuiz1Answer
       objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1606352661}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328418093644629897, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -495,7 +528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8205758954624347384, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: _saveStory
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8734713302721438487, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalScale.x

@@ -25,6 +25,11 @@ public class InventoryContent : MonoBehaviour
         gameObject.SetActive(status);
     }
 
+    public void ToggleBackButton(bool status)
+    {
+        backButton.SetActive(status);
+    }
+
     public void BTN_Back()
     {
         GameManager.Instance.inventory.BTN_BackButton();

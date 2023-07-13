@@ -10,13 +10,14 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private GameObject inventoryContainer;
     [SerializeField]
-    private ClickOffUIElement _clickOffDetector;
-    [SerializeField]
     private InventoryContent[] allContent;
-
+    [SerializeField]
+    private ClickOffUIElement _clickOffDetector;
     public ClickOffUIElement clickOffDetector { get => _clickOffDetector; }
     [SerializeField]
     private InkDialogue inkDialogueForSubmitting;
+    [SerializeField]
+    private GameObject closeButton;
 
     public bool isPresenting { get; private set; } = false;
     public bool isReceivingItem { get; private set; } = false;
@@ -137,7 +138,9 @@ public class Inventory : MonoBehaviour
     {
         BTN_ToggleInventory(status);
         receivedItem.gameObject.SetActive(status);
+        receivedItem.ToggleBackButton(!status);
         isReceivingItem = status;
+        ToggleCloseButton(!status);
 
         if (!status)
         {
@@ -151,8 +154,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private void ToggleCloseButton(bool status)
+    {
+        closeButton.SetActive(status);
+    }
+
     public void BTN_CompleteQuiz()
     {
         isQuiz = false;
+        receivedItem.ToggleBackButton(true);
     }
 }

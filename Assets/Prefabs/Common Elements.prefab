@@ -609,13 +609,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryButton: {fileID: 846171037}
   inventoryContainer: {fileID: 1616999219}
-  _clickOffDetector: {fileID: 8188992128964477530}
   allContent:
   - {fileID: 7971265851157510629}
   - {fileID: 1065768871865553936}
   - {fileID: 5101261171951513551}
   - {fileID: 0}
+  _clickOffDetector: {fileID: 8188992128964477530}
   inkDialogueForSubmitting: {fileID: 5515354729583735525}
+  closeButton: {fileID: 821927080}
 --- !u!114 &5515354729583735525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,7 +2820,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.3
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
