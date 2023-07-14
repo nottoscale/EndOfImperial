@@ -69,9 +69,15 @@ He was taking alprazolam, but not within the past few days.
 ~resetDialogueFaces()
 He was taking diazepam, but not within the past few days. 
 + [::Continue] 
-What about ethanol? 
-+ [::Continue] 
 
+-What about ethanol? 
++ [::Continue] 
+->END
+
+=== CoronerSceneStarkAnswer3 ===
+~resetDialogueFaces()
+No alcohol in his system. 
++ [::Continue] 
 ->END
 
 === CoronerSceneCoronerQuestion2 ===
