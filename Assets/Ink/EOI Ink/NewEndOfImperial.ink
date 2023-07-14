@@ -63,6 +63,8 @@ VAR STARK_PHONE = "InventoryStarkPhone"
 VAR AUTOPSY_REPORT = "InventoryAutopsyReport"
 VAR STARK_TOXICOLOGY_REPORT = "InventoryStarkToxicologyReport"
 VAR TURNIPSEED_TOXICOLOGY_REPORT = "InventoryTurnipseedToxicologyReport"
+VAR STARK_CAR_REPORT = "InventoryStarkCarReport"
+VAR TURNIPSEED_CAR_REPORT = "InventoryTurnipseedCarReport"
 
 
 

@@ -16,7 +16,7 @@
 
 - Ben:: Officer Robinson says he has something for us. 
 + [::Continue] 
--> PoliceStationSceneOfficer1
+-> END
 
 === PoliceStationSceneOfficer1 ===
 ~leftSpeaker = SPEAKER_BEN
@@ -40,8 +40,42 @@
 - Officer:: Here's Stark's report. 
 + [::Continue] 
 
+-  Was Stark wearing his seatbelt?
++ [::Continue] 
+
 //show Stark's car report
--> PoliceStationSceneOfficer2
+ ~ receiveAndQuizInventoryItem("{STARK_CAR_REPORT}::PoliceStationSceneOfficer2")
+-> END
+
+=== PoliceStationSceneStarkAnswer1 ===
+~resetDialogueFaces()
+Dr. S was right. Stark's seatbelt was unbuckled. 
++ [::Continue] 
+
+- Did Stark have his headlights on? 
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneStarkAnswer2 ===
+Stark's headlights were off while he was driving at night!
++ [::Continue] 
+
+- How fast was Stark going at time of impact?
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneStarkAnswer3 ===
+No signs of slowing down.
++ [::Continue] 
+
+- Did Stark hit the brakes? 
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneStarkAnswer4 ===
+Stark didn't even touch the brakes. 
++ [::Continue] 
+-> END
 
 === PoliceStationSceneOfficer2 ===
 ~leftSpeaker = SPEAKER_LUZ
@@ -53,7 +87,47 @@
 - Officer:: And here's Turnipseed's report. 
 + [::Continue] 
 
+-  Was Turnipseed wearing his seatbelt?
++ [::Continue] 
+
 //show Turnipseed's car report
+ ~ receiveAndQuizInventoryItem("{TURNIPSEED_CAR_REPORT}::PoliceStationSceneOfficer3")
+-> END
+
+=== PoliceStationSceneTurnipseedAnswer1 ===
+~resetDialogueFaces()
+Seatbelt was on. 
++ [::Continue] 
+
+- Were Turnipseed's lights on? 
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneTurnipseedAnswer2 ===
+Headlights were also on. 
++ [::Continue] 
+
+- How fast was Turnipseed going at the point of collision?
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneTurnipseedAnswer3 ===
+Looks like there was a small amount of speed reduction. 
++ [::Continue] 
+
+- Did Turnipseed use the brakes?
++ [::Continue] 
+-> END
+
+=== PoliceStationSceneTurnipseedAnswer4 ===
+Turnipseed clearly slammed on the brakes- too late. 
++ [::Continue] 
+-> END
+
+
+=== PoliceStationSceneOfficer3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_OFFICER
 
 - Luz:: Looks like Turnipseed was paying attention. He braked and turned the wheel right before the crash. 
 + [::Continue] 
@@ -71,9 +145,9 @@
 
 - Luz:: Or the red light. 
 + [::Continue] 
--> PoliceStationSceneOfficer3
+-> PoliceStationSceneOfficer4
 
-=== PoliceStationSceneOfficer3 ===
+=== PoliceStationSceneOfficer4 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
 
@@ -90,7 +164,7 @@
 + [::Continue] 
 -> END
 
-=== PoliceStationSceneOfficer4 ===
+=== PoliceStationSceneOfficer5 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_BEN
 

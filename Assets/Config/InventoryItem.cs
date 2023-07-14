@@ -16,4 +16,8 @@ public enum InventoryItem
     StarkToxicologyReport,
     [Description("InventoryTurnipseedToxicologyReport")]
     TurnipseedToxicologyReport,
+    [Description("InventoryStarkCarReport")]
+    StarkCarReport,
+    [Description("InventoryTurnipseedCarReport")]
+    TurnipseedCarReport,
 }
