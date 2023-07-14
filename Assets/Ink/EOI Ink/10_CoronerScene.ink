@@ -20,7 +20,22 @@
 - Coroner:: It's a prescription drug, usually sold under the brand name Xanax. 
 + [::Continue] 
 
-//Stark's toxicology report shows
+-  Was he taking alprazolam?
++ [::Continue] 
+
+//Stark's toxicology report shows 
+ ~ receiveAndQuizInventoryItem("{STARK_TOXICOLOGY_REPORT}::CoronerSceneCoroner3")
+-> END
+
+=== CoronerSceneStarkAnswer1 ===
+~resetDialogueFaces()
+He was taking alprazolam, but not within the past few days. 
++ [::Continue] 
+->END
+
+=== CoronerSceneCoroner3 ===
+~leftSpeaker = SPEAKER_LUZ
+~rightSpeaker = SPEAKER_CORONER
 
 - Coroner:: It has a sedatitve, calming effect. 
 + [::Continue] 
@@ -43,8 +58,23 @@
 - Coroner:: It's better known by its brand name, Valium. 
 + [::Continue] 
 
-//Turnipseed's toxicology report shows 
+-  Was he taking diazepam?
++ [::Continue] 
 
+//Turnipseed's toxicology report shows 
+ ~ receiveAndQuizInventoryItem("{TURNIPSEED_TOXICOLOGY_REPORT}::CoronerSceneCoronerQuestion2")
+-> END
+
+=== CoronerSceneStarkAnswer2 ===
+~resetDialogueFaces()
+He was taking diazepam, but not within the past few days. 
++ [::Continue] 
+What about ethanol? 
++ [::Continue] 
+
+->END
+
+=== CoronerSceneCoronerQuestion2 ===
 - Coroner:: It can treat muscle spasms and...
 + [::Continue] 
 
@@ -91,9 +121,9 @@
 
 - Ben:: Luz... Maybe you should sit down. 
 + [::Continue] 
--> CoronerSceneCoroner3
+-> CoronerSceneCoroner4
 
-=== CoronerSceneCoroner3 ===
+=== CoronerSceneCoroner4 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_CORONER
 
@@ -106,7 +136,7 @@
 - Luz:: Look, Romero, I'm heading to the station to see if the traffic cam footage is ready. You can meet me there, if you're not too busy. 
 -> END
 
-=== CoronerSceneCoroner4 ===
+=== CoronerSceneCoroner5 ===
 ~leftSpeaker = SPEAKER_LUZ
 ~rightSpeaker = SPEAKER_CORONER
 - Coroner:: It's O.K. Luz, just take a deep breath.

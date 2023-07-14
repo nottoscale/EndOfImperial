@@ -53,6 +53,7 @@ VAR SPEAKER_CORONER = "Coroner"
 VAR SPEAKER_TURNIPSEED = "Turnipseed"
 VAR SPEAKER_DA = "DA"
 VAR SPEAKER_DIRECTOREDWIN = "DirectorEdwin"
+VAR SPEAKER_PHONE = "Phone"
 
 // Inventory Items
 VAR TURNIPSEED_PROFILE = "InventoryTurnipseedProfile"
@@ -60,6 +61,9 @@ VAR STARK_PROFILE = "InventoryStarkProfile"
 VAR TURNIPSEED_PHONE = "InventoryTurnipseedPhone"
 VAR STARK_PHONE = "InventoryStarkPhone"
 VAR AUTOPSY_REPORT = "InventoryAutopsyReport"
+VAR STARK_TOXICOLOGY_REPORT = "InventoryStarkToxicologyReport"
+VAR TURNIPSEED_TOXICOLOGY_REPORT = "InventoryTurnipseedToxicologyReport"
+
 
 
 // Global Variables

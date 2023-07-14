@@ -23,7 +23,7 @@
 - Luz:: Blunt chest trauma? 
 + [::Continue] 
 
-- Coroner:: His chest slamemd into the airbag. 
+- Coroner:: His chest slammed into the airbag. 
 + [::Continue] 
 
 - Luz:: Myocardial contusion? 

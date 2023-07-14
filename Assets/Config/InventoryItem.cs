@@ -12,6 +12,8 @@ public enum InventoryItem
     StarkPhoneRecord,
     [Description("InventoryAutopsyReport")]
     AutopsyReport,
-    [Description("test")]
-    TestItem
+    [Description("InventoryStarkToxicologyReport")]
+    StarkToxicologyReport,
+    [Description("InventoryTurnipseedToxicologyReport")]
+    TurnipseedToxicologyReport,
 }
