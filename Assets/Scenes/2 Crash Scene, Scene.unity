@@ -280,17 +280,6 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &292607094 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1065768871865553936, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-  m_PrefabInstance: {fileID: 1560179378}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342c63ffdc133cb4b983686350a28ea3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &456361094
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,14 +847,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -64
       objectReference: {fileID: 0}
-    - target: {fileID: 2073290951670118695, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: allContent.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2073290951670118695, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: allContent.Array.data[2]
-      value: 
-      objectReference: {fileID: 292607094}
     - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: dialogueFaces.Array.size
       value: 4

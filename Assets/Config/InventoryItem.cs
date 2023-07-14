@@ -20,4 +20,6 @@ public enum InventoryItem
     StarkCarReport,
     [Description("InventoryTurnipseedCarReport")]
     TurnipseedCarReport,
+    [Description("Map")]
+    Map,
 }
