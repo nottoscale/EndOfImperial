@@ -703,6 +703,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 672443357995315876, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 672443357995315876, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 843387251619316260, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: knotName
       value: CrashSceneBen1
@@ -811,6 +819,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1582365131799883456, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1937171681838223973, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -847,17 +859,37 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -64
       objectReference: {fileID: 0}
-    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: dialogueFaces.Array.size
-      value: 4
+    - target: {fileID: 2110190263371136860, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2649840783217240546, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
-      propertyPath: dialogueFaces.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 3cb70466e29d347f48134ae74cb1e3d4, type: 2}
     - target: {fileID: 3888172706828061757, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: _inventoryItem
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be19e89d6ae16c64eae4bbca55bae069, type: 3}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212849505647174129, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4435321735503741887, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.x
@@ -887,6 +919,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Crash Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 5100097057908522029, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5101261171951513551, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: _inventoryItem
       value: 2
@@ -902,6 +938,34 @@ PrefabInstance:
     - target: {fileID: 5539030930866364314, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 3 Hospital Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be19e89d6ae16c64eae4bbca55bae069, type: 3}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836931522751386901, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7052629625674899429, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7610660480100177565, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -1090,6 +1154,14 @@ PrefabInstance:
     - target: {fileID: 8734713302721438487, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819442364388740181, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819442364388740181, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 58688850, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
