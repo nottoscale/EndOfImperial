@@ -14,4 +14,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3 Hospital Scene.unity
     guid: 208846a01ec9b429b9455f0dbc5eda55
+  - enabled: 1
+    path: Assets/Scenes/4 Coroner Autopsy Scene.unity
+    guid: 23aa91cf9eccc44c29336326a7ee953b
+  - enabled: 1
+    path: Assets/Scenes/5 Hospital Scene.unity
+    guid: 7b1c12f154ee0455d8e3db3ddc328023
+  - enabled: 1
+    path: Assets/Scenes/6 Turnipseed Patient Room Scene.unity
+    guid: 909cfc3a8c59e4b33a1ab6987f36cccb
+  - enabled: 1
+    path: Assets/Scenes/7 DA Office Scene.unity
+    guid: 896b4ad65d3b54b8a95fc39e89665096
+  - enabled: 1
+    path: Assets/Scenes/8 Day Coffee Shop Scene.unity
+    guid: 5022057e1e15f4090a99b502ed407491
+  - enabled: 1
+    path: Assets/Scenes/9 Movie Set Scene.unity
+    guid: aa3e6978375514aba8e62afd9547b136
+  - enabled: 1
+    path: Assets/Scenes/10 Coroner Autopsy Scene.unity
+    guid: 0620411a11d7b4ce6b7ebd987b2f960c
+  - enabled: 1
+    path: Assets/Scenes/11 Day Crash Scene.unity
+    guid: 72e77452365aa43b09c6ce3cbe7f2c2b
+  - enabled: 1
+    path: Assets/Scenes/12 Police Station Scene.unity
+    guid: c220a5adacdfa499db18b57242db4bb6
+  - enabled: 1
+    path: Assets/Scenes/13 DA Office Scene.unity
+    guid: b725dc8fa91434f5cafd7d154c6ad86e
+  - enabled: 1
+    path: Assets/Scenes/13 Hospital Scene.unity
+    guid: d7525650a5b9f4a20b3483cdcf222631
+  - enabled: 1
+    path: Assets/Scenes/14 Turnipseed Patient Room Scene.unity
+    guid: b53b81ae6d1ef43e4b3858b664a63d6b
   m_configObjects: {}

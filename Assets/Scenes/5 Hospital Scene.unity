@@ -146,13 +146,25 @@ PrefabInstance:
       propertyPath: _knotName
       value: HospitalSceneBen1
       objectReference: {fileID: 0}
+    - target: {fileID: 1349270901551527675, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440884360425272449, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610660480100177565, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 5 Hospital Scene
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x

@@ -159,6 +159,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 545091198278753177, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349270901551527675, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601835753212361228, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2628262782466042993, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -171,9 +183,25 @@ PrefabInstance:
       propertyPath: dialogueFaces.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: ec7e9acb20861417681a68f96d2e3fee, type: 2}
+    - target: {fileID: 4440884360425272449, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315972522295798539, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5407297718771686763, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610660480100177565, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 13 Hospital Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932304871063241387, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8131615771728567167, guid: 7c49acdb8e7a7cc40800093140831d90, type: 3}
       propertyPath: m_LocalPosition.x
