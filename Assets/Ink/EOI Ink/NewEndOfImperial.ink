@@ -1,3 +1,4 @@
+// External Functions
 EXTERNAL debug(message)
 EXTERNAL changeScene(message)
 
@@ -12,6 +13,10 @@ EXTERNAL closeReadInventoryItem(itemNameAndContinueKnot)
 EXTERNAL presentEvidence(submitKnotName)
 // tell unity that player has selected the right evidence
 EXTERNAL correctEvidence(noParam)
+
+// hide and show prompt message for player
+EXTERNAL showPrompt(message)
+EXTERNAL hidePrompt(noParam)
 
 // Scenes
 INCLUDE 1_CoffeeShopNight.ink

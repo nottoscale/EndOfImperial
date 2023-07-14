@@ -15,6 +15,8 @@ public static class InkExternalActionManager
         RegisterInkAction(InkExternalActionType.CorrectEvidence, new CorrectEvidenceExternalAction());
         RegisterInkAction(InkExternalActionType.ReceiveInventoryItem, new ReceiveInventoryItemExternalAction());
         RegisterInkAction(InkExternalActionType.CloseReadInventoryItem, new CloseReadInventoryItemExternalAction());
+        RegisterInkAction(InkExternalActionType.ShowPrompt, new ShowPromptInkExternalAction());
+        RegisterInkAction(InkExternalActionType.HidePrompt, new HidePromptInkExternalAction());
     }
 
     public static void RegisterInkAction(InkExternalActionType type, InkExternalAction action)

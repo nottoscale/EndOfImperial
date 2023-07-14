@@ -11,6 +11,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     [SerializeField]
     private Inventory _inventory;
     public Inventory inventory { get => _inventory; }
+    [SerializeField]
+    private PromptMenu promptMenu;
 
     public void TogglePlayerCanMove(bool status)
     {
@@ -31,5 +33,15 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void ShowPrompt(string message)
+    {
+        promptMenu.ShowPrompt(message);
+    }
+
+    public void HidePrompt()
+    {
+        promptMenu.HidePrompt();
     }
 }

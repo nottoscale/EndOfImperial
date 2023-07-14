@@ -25,10 +25,12 @@
 
 //Stark's toxicology report shows 
  ~ closeReadInventoryItem("{STARK_TOXICOLOGY_REPORT}::CoronerSceneCoroner3")
+  ~ showPrompt("This is a test prompt")
 -> END
 
 === CoronerSceneStarkAnswer1 ===
 ~resetDialogueFaces()
+  ~ hidePrompt("")
 He was taking alprazolam, but not within the past few days. 
 + [::Continue] 
 ->END
@@ -63,10 +65,12 @@ He was taking alprazolam, but not within the past few days.
 
 //Turnipseed's toxicology report shows 
  ~ closeReadInventoryItem("{TURNIPSEED_TOXICOLOGY_REPORT}::CoronerSceneCoronerQuestion2")
+ ~ showPrompt("This is a test prompt")
 -> END
 
 === CoronerSceneStarkAnswer2 ===
 ~resetDialogueFaces()
+~ hidePrompt("")
 He was taking diazepam, but not within the past few days. 
 + [::Continue] 
 

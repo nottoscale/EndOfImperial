@@ -18,4 +18,8 @@ public enum InkExternalActionType
     ReceiveInventoryItem,
     [Description("closeReadInventoryItem")]
     CloseReadInventoryItem,
+    [Description("showPrompt")]
+    ShowPrompt,
+    [Description("hidePrompt")]
+    HidePrompt,
 }
