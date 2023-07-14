@@ -6,7 +6,7 @@ EXTERNAL changeScene(message)
 EXTERNAL receiveInventoryItem(itemNameAndContinueKnot)
 // same as receive but there may be quiz knots 
 // before we can close
-EXTERNAL receiveAndQuizInventoryItem(itemNameAndContinueKnot)
+EXTERNAL closeReadInventoryItem(itemNameAndContinueKnot)
 
 // allows player to present evidence from inventory
 EXTERNAL presentEvidence(submitKnotName)
@@ -35,13 +35,6 @@ INCLUDE CutSceneBeforeHospitalScene2.ink
 INCLUDE CutSceneBeforeCoronerScene2.ink
 INCLUDE CutSceneBeforeDayCrashScene.ink
 INCLUDE CutSceneEnding.ink
-
-
-
-
-
-
-
 
 // Characters
 VAR SPEAKER_LUZ = "Luz"

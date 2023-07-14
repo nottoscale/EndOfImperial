@@ -16,6 +16,6 @@ public enum InkExternalActionType
     CorrectEvidence,
     [Description("receiveInventoryItem")]
     ReceiveInventoryItem,
-    [Description("receiveAndQuizInventoryItem")]
-    ReceiveAndQuizInventoryItem,
+    [Description("closeReadInventoryItem")]
+    CloseReadInventoryItem,
 }

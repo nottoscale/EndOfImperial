@@ -1,6 +1,6 @@
 using System;
 
-public class ReceiveAndQuizInventoryItemExternalAction : ReceiveInventoryItemExternalActionBase
+public class CloseReadInventoryItemExternalAction : ReceiveInventoryItemExternalActionBase
 {
     public override Func<string, object> GetAction()
     {

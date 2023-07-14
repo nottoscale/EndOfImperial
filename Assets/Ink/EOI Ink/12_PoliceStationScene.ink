@@ -44,7 +44,7 @@
 + [::Continue] 
 
 //show Stark's car report
- ~ receiveAndQuizInventoryItem("{STARK_CAR_REPORT}::PoliceStationSceneOfficer2")
+ ~ closeReadInventoryItem("{STARK_CAR_REPORT}::PoliceStationSceneOfficer2")
 -> END
 
 === PoliceStationSceneStarkAnswer1 ===
@@ -91,7 +91,7 @@ Stark didn't even touch the brakes.
 + [::Continue] 
 
 //show Turnipseed's car report
- ~ receiveAndQuizInventoryItem("{TURNIPSEED_CAR_REPORT}::PoliceStationSceneOfficer3")
+ ~ closeReadInventoryItem("{TURNIPSEED_CAR_REPORT}::PoliceStationSceneOfficer3")
 -> END
 
 === PoliceStationSceneTurnipseedAnswer1 ===

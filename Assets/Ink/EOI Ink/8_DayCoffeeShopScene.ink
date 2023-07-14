@@ -21,7 +21,7 @@
 + [::Continue] 
 
 //pulls up mobile service usage report
- ~ receiveAndQuizInventoryItem("{TURNIPSEED_PHONE}::DayCoffeeShopSceneBenQuiz2Question")
+ ~ closeReadInventoryItem("{TURNIPSEED_PHONE}::DayCoffeeShopSceneBenQuiz2Question")
 -> END
 
 //prompt: When was his last call? 
@@ -35,7 +35,7 @@ Looks like it was well before the crash.
 
 === DayCoffeeShopSceneBenQuiz2Question === 
 ~resetDialogueFaces()
- ~ receiveAndQuizInventoryItem("{STARK_PHONE}::DayCoffeeShopSceneBen3")
+ ~ closeReadInventoryItem("{STARK_PHONE}::DayCoffeeShopSceneBen3")
 -> END
 
 === DayCoffeeShopSceneBenQuiz2Answer === 

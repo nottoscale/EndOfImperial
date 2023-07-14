@@ -24,7 +24,7 @@
 + [::Continue] 
 
 //Stark's toxicology report shows 
- ~ receiveAndQuizInventoryItem("{STARK_TOXICOLOGY_REPORT}::CoronerSceneCoroner3")
+ ~ closeReadInventoryItem("{STARK_TOXICOLOGY_REPORT}::CoronerSceneCoroner3")
 -> END
 
 === CoronerSceneStarkAnswer1 ===
@@ -62,7 +62,7 @@ He was taking alprazolam, but not within the past few days.
 + [::Continue] 
 
 //Turnipseed's toxicology report shows 
- ~ receiveAndQuizInventoryItem("{TURNIPSEED_TOXICOLOGY_REPORT}::CoronerSceneCoronerQuestion2")
+ ~ closeReadInventoryItem("{TURNIPSEED_TOXICOLOGY_REPORT}::CoronerSceneCoronerQuestion2")
 -> END
 
 === CoronerSceneStarkAnswer2 ===
